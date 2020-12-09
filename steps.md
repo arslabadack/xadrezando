@@ -35,6 +35,8 @@
 
 > Utilizar corretamente as tags de layout apresentadas em aula em todas as páginas (header, nav, main, footer e etc). (1 ponto)
 
+- ~~Tags de layout~~
+
 > Utilizar corretamente, pelo menos, 1 formulário no site. O formulário deve ter, no mínimo, os atributos action, method e os elementos inputs (text,- radio, select) textarea e botões submit e reset. (1 ponto)
 
 
@@ -43,3 +45,4 @@
 
 https://super.abril.com.br/cultura/o-que-e-o-gambito-da-rainha-entenda-o-lance-de-xadrez-que-batiza-a-serie/
 
+ 
