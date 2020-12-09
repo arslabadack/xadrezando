@@ -1,6 +1,8 @@
 # Xadrezando
 
-Xadrezando is a website prototype about chess. 
+First steps in HTML!
 
-Made for educational purposes only. 
+Xadrezando is a website prototype about chess, yeah, i love chess!
+
+Made for educational purposes only! 
 
