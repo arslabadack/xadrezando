@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="image/horse_chess.ico" />
+    <title>Cadastro</title>
+    <style>
+        header,
+        footer {
+            background-color: grey;
+            color: white;
+            padding: 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        fieldset {
+            border: 1px solid #ccc;
+            margin-top: 20px;
+            width: 350px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Xadrezando - Xadrez Descomplicado</h1>
+    </header>
+
+    <main>
+        <form action="index.html" method="get">
+            <fieldset>
+                <div style="margin-bottom: 10px;">
+                    <label for="email">Email</label><br />
+                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+                </div>
+
+                <div style="margin-bottom: 10px;">
+                    <p style="margin-bottom: 0;">Sexo</p>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Masculino</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Feminino</label><br>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Outro</label>
+                </div>
+                
+                <div style="margin-bottom: 10px;">
+                    <label for="password">Senha</label><br />
+                    <input type="password" name="password" id="password" placeholder="Digite sua senha">
+                </div>
+
+                <div style="margin-bottom: 10px;">
+                    <label for="password-confirmation">Confirme sua senha</label><br />
+                    <input type="password" name="password-confirmation" id="password-confirmation" placeholder="Digite sua senha novamente">
+                </div>
+
+                <div style="margin-bottom: 10px;">
+                    <label for="bio">Biografia</label><br />
+                    <textarea name="bio" id="bio" cols="30" rows="7" placeholder="Caso queria, escreva um resumo sobre você"></textarea>
+                </div>
+
+                <div style="margin-bottom: 10px;">
+                    <label for="favorite-mode">Modo favorito de jogo</label><br />
+                    <select name="favorite-mode" id="favorite-mode">
+                        <option value="Clássico">Clássico</option>
+                        <option value="Rápida">Rápida</option>
+                        <option value="Blitz">Blitz</option>
+                        <option value="Todos">Todos</option>
+                        <option value="Nenhum">Nenhum</option>
+                    </select>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="newsletter" id="newsletter">
+                    <label for="newsletter">Assisnar a newsletter</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <button type="submit">Cadastrar</button>
+                <button type="reset">Limpar</button>
+            </fieldset>
+        </form>
+
+        <a href="login.html">Já tem uma conta? Acesse com ela!</a>
+    </main>
+
+    <footer>
+        <p>
+            <em>
+                Desenvolvido por: Adam Slabadack <a href="https://github.com/arslabadack"><img src="image/github.png"
+                        alt="Logomarca do GitHub. Um gato misturado com polvo. A imagem é monocromática em cinza."
+                        title="arslabadack"></a>
+            </em>
+        </p>
+    </footer>
+
+</body>
+
+</html>
