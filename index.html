@@ -11,195 +11,265 @@
     <meta name="author" content="Adam Roger Slabadack, Eduardo Henrique de Oliveira" />
     <meta name="robots" content="index,follow" />
     <link rel="icon" href="image/horse_chess.ico" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" 
+        crossorigin="anonymous"
+    >
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
     <title>Xadrezando</title>
-    <style>
-        header,
-        footer {
-            background-color: grey;
-            color: white;
-            padding: 10px;
-            text-transform: uppercase;
-            font-weight: bold;
-        }
-    </style>
 </head>
 
 <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            
+            <a class="navbar-brand" href="#">
+                <img src="image/horse_chess.ico" class="navbar-img" alt="Imagem de uma peça de xadrez">
+                <span class="navbar-brand-name">Xadrezando</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="history.html" class="nav-link active">História do Xadrez</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="rules.html" class="nav-link">Regras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="players.html" class="nav-link">Lendas do Xadrez</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="ranking.html" class="nav-link">Ranking Atual</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="matches.html" class="nav-link">Partidas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="curiosities.html" class="nav-link">Curiosidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="championship.html" class="nav-link">Campeonato Mundial</a>
+                    </li>
 
-    <header>
-        <h1>Xadrezando - Xadrez Descomplicado</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="login.html">Login</a></li>
-            <li style="margin-bottom: 10px;"><a href="sing_up.html">Cadastre-se</a></li>
-            <li><a href="history.html">História do Xadrez</a></li>
-            <li><a href="rules.html">Regras</a></li>
-            <li><a href="players.html">Lendas do Xadrez</a></li>
-            <li><a href="ranking.html">Ranking Atual</a></li>
-            <li><a href="matches.html">Partidas</a></li>
-            <li><a href="curiosities.html">Curiosidades</a></li>
-            <li><a href="championship.html">Campeonato Mundial</a></li>
-        </ul>
+                    <!-- Navbar divider (Small screen only) -->
+                    <hr>
+
+                    <li class="nav-item">
+                        <a href="login.html" class="btn btn-sm btn-primary">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="sing_up.html" class="nav-link">Cadastre-se</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
     <main>
+        <div class="container py-5">
+            <section>
 
-        <section>
+                <h2>Bem vindos enxadristas!</h2>
+    
+                <p>
+                    O xadrez é <strong>mais que um esporte, é uma arte, uma ciência, um estilo de vida.</strong> Trata-se de
+                    um jogo de tabuleiro de natureza recreativa ou esportiva, para duas pessoas e existe a mais de cinco
+                    séculos!
+                </p>
+    
+                <p>
+                    Pessoas de todo mundo praticam o xadrez, seja em torneios, nas escolas, nas praças. Preparamos aqui
+                    alguns tópicos para conhecer melhor essa arte. Boa partida!
+                </p>
+    
+            </section>
+    
+            <section>
+                <div class="row justify-content-center">
+                    <div class="row px-0">
+                        <h3>Mas afinal, o que é o xadrez?</h3>
+                        <div class="col-lg-8">
+                            <p>
+                                Conhecido como Xadrez Ocidental ou Xadrez Internacional para distingui-lo dos seus antecessores e de
+                                outras variantes atuais. A forma atual do jogo surgiu no sudoeste da Europa na segunda metade do século
+                                XV, durante o Renascimento, depois de ter se desenvolvido a partir de suas antigas origens persas e
+                                indianas.
+                            </p>
+                
+                            <p>
+                                O Xadrez pertence à mesma família do Xiangqi e do Shogi e, atualmente segundo historiadores do
+                                enxadrismobr, todos eles se originaram do Chaturanga, que se praticava na Índia no século VI.
+                            </p>
+                
+                            <p>
+                                Existem muitos tipos de xadrez: xadrez ocidental, xadrez turco, xadrez chinês (Xiangqi), xadrez árabe
+                                (Xatranje), xadrez coreano (Janggi), xadrez japonês (Shogi), xadrez indiano (Chaturaji), xadrez
+                                tailandês (Makruk), xadrez indonésio e até o xadrez etíope (Senterej). Há muitas semelhanças entre tais
+                                jogos, com todos possivelmente compartilhando uma origem comum.
+                            </p>
+                        </div>
+                        
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <img src="image/tabuleiro_ma.png"
+                                    alt="Foto antiga de um tabuleiro de xadrez com as peças alinhadas para início do jogo. A foto é em preto e branco e o tabuleiro é montado sobre uma mesa. As peças representam miniaturas de seres reais como cavaleiros, rei e rainha e peões (ou soldados). O tabuleiro em questão pertenceu a escritor brasileiro Machado de Assis"
+                                    title="Tabuleiro de xadrez pertencente a Machado de Assis" 
+                                    class="img-fluid card-img-top"
+                                />
+                                
+                                <div class="card-footer">
+                                    <p class="mb-0">
+                                        <em>
+                                            Tabuleiro que pertenceu a Machado de Assis.<br>Fonte:
+                                            <a
+                                                href="https://commons.wikimedia.org/wiki/File:Tabuleiro_de_xadrez_que_pertenceu_a_Machado_de_Assis.png">Wikimedia
+                                            </a>
+                                        </em>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
 
-            <h2>Bem vindos enxadristas!</h2>
+                    <div class="row px-0 mt-4">
+                        <div class="col-lg-4">
+                            <div class="card mb-4">
+                                <img src="image/benjamin.jpg"
+                                    alt="Uma gravura antiga, na qual aparece desenhada uma sala com três pessoas, um homem em pé, uma mulher e outro homem sentados. Um dos homens, o que encontra-se sentado, está vestido de preto com meias longas, casaco comprido e sapato de fivela. este homem esta realizando um movimento em um tabuleiro de xadrez, sua aparencia é séria, denotando concentração. A mulher está de vestido longo, cabelos presos e aparece de lado na figura, ela aguarda sua vez de jogar, observando o seu oponente. O terceiro homem está em pé usando uma jaqueta longa estilo de gala do século XIX, está também com uma peruca branca. Ele aparentemente etsa organizando uma caixa que está sobre a mesa. Há um cachorro deitado no chão ao lado do homem que está jogando. Ao fundo nota-se dois quadros na parede, um aparador com um vaso sobre este e uma cadiera."
+                                    title="Benjamin Franklin joga xadrez com a Senhora Howe"
+                                    class="img-fluid card-img-top"
+                                >
+                                
+                                <div class="card-footer">
+                                    <p class="mb-0">
+                                        <em>
+                                            Benjamin Franklin joga xadrez com a Senhora Howe.<br>Fonte:
+                                            <a href="https://nypl.getarchive.net/media/benjamin-franklin-playing-chess-with-mrs-howe-92ee98">New
+                                                York Public Library's</a>
+                                        </em>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-8">
+                            <p>
+                                A partida de xadrez é disputada em um tabuleiro de casas claras e escuras, sendo que, no início, cada
+                                enxadrista controla dezesseis peças com diferentes formatos e características. O objetivo da partida é
+                                dar xeque-mate (também chamado simplesmente de mate) no rei adversário.
+                            </p>
+        
+                            <p>
+                                Teóricos do enxadrismo desenvolveram várias estratégias para se atingir este objetivo, embora não seja
+                                um fato muito comum em jogos oficiais, pois os jogadores em grande desvantagem ou percepção de iminência
+                                da derrota têm a opção de abandonar (desistir) a partida, antes de receberem o mate.
+                            </p>
+                
+                            
+                
+                            <p>
+                                As competições enxadrísticas oficiais tiveram início ainda no século XIX, sendo Wilhelm Steinitz
+                                considerado o primeiro campeão mundial de xadrez. Existe também o campeonato internacional por equipes
+                                realizado a cada dois anos, a Olimpíada de Xadrez.
+                            </p>
+                
+                            <p>
+                                Desde o início do século XX, duas organizações de caráter mundial, a Federação Internacional de Xadrez e
+                                a Federação Internacional de Xadrez Postal vêm organizando eventos que congregam os melhores enxadristas
+                                do mundo. O atual campeão do mundo é o norueguês Magnus Carlsene a campeã (2018) é a chinesa Ju Wenjun.
+                            </p>
 
-            <p>
-                O xadrez é <strong>mais que um esporte, é uma arte, uma ciência, um estilo de vida.</strong> Trata-se de
-                um jogo de tabuleiro de natureza recreativa ou esportiva, para duas pessoas e existe a mais de cinco
-                séculos!
-            </p>
-
-            <p>
-                Pessoas de todo mundo praticam o xadrez, seja em torneios, nas escolas, nas praças. Preparamos aqui
-                alguns tópicos para conhecer melhor essa arte. Boa partida!
-            </p>
-
-        </section>
-
-        <section>
-
-            <h3>Mas afinal, o que é o xadrez?</h3>
-
-            <p>
-                Conhecido como Xadrez Ocidental ou Xadrez Internacional para distingui-lo dos seus antecessores e de
-                outras variantes atuais. A forma atual do jogo surgiu no sudoeste da Europa na segunda metade do século
-                XV, durante o Renascimento, depois de ter se desenvolvido a partir de suas antigas origens persas e
-                indianas.
-            </p>
-
-            <p>
-                O Xadrez pertence à mesma família do Xiangqi e do Shogi e, atualmente segundo historiadores do
-                enxadrismobr, todos eles se originaram do Chaturanga, que se praticava na Índia no século VI.
-            </p>
-
-            <p>
-                Existem muitos tipos de xadrez: xadrez ocidental, xadrez turco, xadrez chinês (Xiangqi), xadrez árabe
-                (Xatranje), xadrez coreano (Janggi), xadrez japonês (Shogi), xadrez indiano (Chaturaji), xadrez
-                tailandês (Makruk), xadrez indonésio e até o xadrez etíope (Senterej). Há muitas semelhanças entre tais
-                jogos, com todos possivelmente compartilhando uma origem comum.
-            </p>
-
-            <img src="image/tabuleiro_ma.png"
-                alt="Foto antiga de um tabuleiro de xadrez com as peças alinhadas para início do jogo. A foto é em preto e branco e o tabuleiro é montado sobre uma mesa. As peças representam miniaturas de seres reais como cavaleiros, rei e rainha e peões (ou soldados). O tabuleiro em questão pertenceu a escritor brasileiro Machado de Assis"
-                title="Tabuleiro de xadrez pertencente a Machado de Assis" />
-
-            <p><em>
-                    Tabuleiro que pertenceu a Machado de Assis. Fonte:
-                    <a
-                        href="https://commons.wikimedia.org/wiki/File:Tabuleiro_de_xadrez_que_pertenceu_a_Machado_de_Assis.png">Wikimedia
-                    </a>
-                </em></p>
-
-            <p>
-                A partida de xadrez é disputada em um tabuleiro de casas claras e escuras, sendo que, no início, cada
-                enxadrista controla dezesseis peças com diferentes formatos e características. O objetivo da partida é
-                dar xeque-mate (também chamado simplesmente de mate) no rei adversário.
-            </p>
-
-            <p>
-                Teóricos do enxadrismo desenvolveram várias estratégias para se atingir este objetivo, embora não seja
-                um fato muito comum em jogos oficiais, pois os jogadores em grande desvantagem ou percepção de iminência
-                da derrota têm a opção de abandonar (desistir) a partida, antes de receberem o mate.
-            </p>
-
-            <p>
-                As competições enxadrísticas oficiais tiveram início ainda no século XIX, sendo Wilhelm Steinitz
-                considerado o primeiro campeão mundial de xadrez. Existe também o campeonato internacional por equipes
-                realizado a cada dois anos, a Olimpíada de Xadrez.
-            </p>
-
-            <p>
-                Desde o início do século XX, duas organizações de caráter mundial, a Federação Internacional de Xadrez e
-                a Federação Internacional de Xadrez Postal vêm organizando eventos que congregam os melhores enxadristas
-                do mundo. O atual campeão do mundo é o norueguês Magnus Carlsene a campeã (2018) é a chinesa Ju Wenjun.
-            </p>
-
-            <p>
-                <em>
-                    Fonte: <a href="https://pt.wikipedia.org/wiki/Xadrez#Fundamentos_da_estrat%C3%A9gia"
-                        target="_blank">Wikipédia</a>
-                </em>
-            </p>
-
-            <img src="image/benjamin.jpg"
-                alt="Uma gravura antiga, na qual aparece desenhada uma sala com três pessoas, um homem em pé, uma mulher e outro homem sentados. Um dos homens, o que encontra-se sentado, está vestido de preto com meias longas, casaco comprido e sapato de fivela. este homem esta realizando um movimento em um tabuleiro de xadrez, sua aparencia é séria, denotando concentração. A mulher está de vestido longo, cabelos presos e aparece de lado na figura, ela aguarda sua vez de jogar, observando o seu oponente. O terceiro homem está em pé usando uma jaqueta longa estilo de gala do século XIX, está também com uma peruca branca. Ele aparentemente etsa organizando uma caixa que está sobre a mesa. Há um cachorro deitado no chão ao lado do homem que está jogando. Ao fundo nota-se dois quadros na parede, um aparador com um vaso sobre este e uma cadiera."
-                title="Benjamin Franklin joga xadrez com a Senhora Howe">
-            <p>
-                <em>
-                    Benjamin Franklin joga xadrez com a Senhora Howe. Fonte:
-                    <a href="https://nypl.getarchive.net/media/benjamin-franklin-playing-chess-with-mrs-howe-92ee98">New
-                        York Public Library's</a>
-                </em>
-            </p>
-
-        </section>
-
-        <section>
-
-            <h3>Mais sobre o Xadrez, acesse:</h3>
-
-            <ul>
-                <li><a href="https://www.fide.com/" target="_blank">International Chess Federation</a></li>
-                <li><a href="http://www.cbx.org.br" target="_blank">Confederação Brasileira de Xadrez</a></li>
-                <li><a href="https://www.chess.com/" target="_blank">Chess.com</a></li>
-                <li><a href="https://magnuscarlsen.com/pt/" target="_blank">Magnus Carlsen Web Page</a></li>
-            </ul>
-
-        </section>
-
-        <section>
-
-            <h3>Bibliografia Utilizada</h3>
-
-            <ul>
-                <li><a href="https://www.chess.com/">Chess.com</a></li>
-                <li><a href="https://pt.wikipedia.org/wiki/Xadrez">Wikipédia</a></li>
-                <li><a href="https://www.rankings.com.br/melhores-jogadores-de-xadrez/">Rankings</a></li>
-                <li><a href="https://rafaelleitao.com/o-homem-e-a-mquina-o-match-kasparov-x-deep-blue/">O Homem e a
-                        Máquina - Rafael Leitão</a></li>
-                <li><a href="https://www.netflix.com/br/title/80234304">O Gambito da Rainha - Netflix</a></li>
-                <li><a
-                        href="https://canaltech.com.br/mercado/serie-o-gambito-da-rainha-fez-venda-de-jogos-de-xadrez-explodir-nos-eua-175498/">Série
-                        O Gambito da Rainha fez venda de jogos de xadrez explodir nos EUA - Canaltech</a></li>
-                <li><a
-                        href="https://www.correio24horas.com.br/noticia/nid/sucesso-de-o-gambito-da-rainha-leva-a-aumento-de-interesse-pelo-xadrez/">Sucesso
-                        de 'O Gambito da Rainha' leva a aumento de interesse pelo xadrez - Correio</a></li>
-
-                <li><a
-                        href="https://super.abril.com.br/cultura/o-que-e-o-gambito-da-rainha-entenda-o-lance-de-xadrez-que-batiza-a-serie/">O
-                        que é o gambito da rainha? Entenda o lance de xadrez que batiza a série - Superinteressante</a>
-                </li>
-
-                <li>
-                    <a href="https://pt.wikipedia.org/wiki/Campeonato_Mundial_de_Xadrez">Campeonato Mundial de Xadrez -
-                        Wikipédia</a>
-                </li>
-            </ul>
-
-        </section>
+                            <p>
+                                <em>
+                                    Fonte: <a href="https://pt.wikipedia.org/wiki/Xadrez#Fundamentos_da_estrat%C3%A9gia"
+                                        target="_blank">Wikipédia</a>
+                                </em>
+                            </p>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </section>
+    
+            <section>
+    
+                <h3>Mais sobre o Xadrez, acesse:</h3>
+    
+                <ul>
+                    <li><a href="https://www.fide.com/" target="_blank">International Chess Federation</a></li>
+                    <li><a href="http://www.cbx.org.br" target="_blank">Confederação Brasileira de Xadrez</a></li>
+                    <li><a href="https://www.chess.com/" target="_blank">Chess.com</a></li>
+                    <li><a href="https://magnuscarlsen.com/pt/" target="_blank">Magnus Carlsen Web Page</a></li>
+                </ul>
+    
+            </section>
+    
+            <section>
+    
+                <h3>Bibliografia Utilizada</h3>
+    
+                <ul>
+                    <li><a href="https://www.chess.com/">Chess.com</a></li>
+                    <li><a href="https://pt.wikipedia.org/wiki/Xadrez">Wikipédia</a></li>
+                    <li><a href="https://www.rankings.com.br/melhores-jogadores-de-xadrez/">Rankings</a></li>
+                    <li><a href="https://rafaelleitao.com/o-homem-e-a-mquina-o-match-kasparov-x-deep-blue/">O Homem e a
+                            Máquina - Rafael Leitão</a></li>
+                    <li><a href="https://www.netflix.com/br/title/80234304">O Gambito da Rainha - Netflix</a></li>
+                    <li><a
+                            href="https://canaltech.com.br/mercado/serie-o-gambito-da-rainha-fez-venda-de-jogos-de-xadrez-explodir-nos-eua-175498/">Série
+                            O Gambito da Rainha fez venda de jogos de xadrez explodir nos EUA - Canaltech</a></li>
+                    <li><a
+                            href="https://www.correio24horas.com.br/noticia/nid/sucesso-de-o-gambito-da-rainha-leva-a-aumento-de-interesse-pelo-xadrez/">Sucesso
+                            de 'O Gambito da Rainha' leva a aumento de interesse pelo xadrez - Correio</a></li>
+    
+                    <li><a
+                            href="https://super.abril.com.br/cultura/o-que-e-o-gambito-da-rainha-entenda-o-lance-de-xadrez-que-batiza-a-serie/">O
+                            que é o gambito da rainha? Entenda o lance de xadrez que batiza a série - Superinteressante</a>
+                    </li>
+    
+                    <li>
+                        <a href="https://pt.wikipedia.org/wiki/Campeonato_Mundial_de_Xadrez">Campeonato Mundial de Xadrez -
+                            Wikipédia</a>
+                    </li>
+                </ul>
+    
+            </section>
+        </div>
+        
     </main>
-    <footer>
-        <p>
-            <em>
-                Desenvolvido por: Adam Slabadack 
-                    <a href="https://github.com/arslabadack">
-                        <img src="image/github.png" alt="Logomarca do GitHub. Um gato misturado com polvo. A imagem é monocromática em cinza."
-                        title="arslabadack">
-                    </a>
-                    Eduardo Henrique de Oliveira
-                    <a href="https://github.com/Eduardo-H">
-                        <img src="image/github.png" alt="Logomarca do GitHub. Um gato misturado com polvo. A imagem é monocromática em cinza."
-                        title="Eduardo-H">
-                    </a>
-            </em>
-        </p>
+    <footer class="bg-dark text-white">
+        <div class="container-fluid">
+            <div class="row py-4 text-center">
+                <p>Xadrezando 2021</p>
+                <p class="mb-0">Desenvolvido por: 
+                    <a href="https://github.com/arslabadack">Adam Slabadack </a>, 
+                    <a href="https://github.com/Eduardo-H">Eduardo Henrique de Oliveira</a>
+                </p>
+            </div>
+        </div>
     </footer>
+
+    
+
+    <!-- Bootstrap JS -->
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" 
+        crossorigin="anonymous"
+    ></script>
 </body>
 
 </html>
