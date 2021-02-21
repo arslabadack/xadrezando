@@ -7,282 +7,329 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="image/horse_chess.ico" />
     <title>Regras</title>
-    <style>
-        header,
-        footer {
-            background-color: grey;
-            color: white;
-            padding: 10px;
-            text-transform: uppercase;
-            font-weight: bold;
-        }
-    </style>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" 
+        crossorigin="anonymous"
+    >
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            
+            <a class="navbar-brand" href="#">
+                <img src="image/horse_chess.ico" class="navbar-img" alt="Imagem de uma peça de xadrez">
+                <span class="navbar-brand-name">Xadrezando</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="history.html" class="nav-link">História do Xadrez</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="rules.html" class="nav-link active">Regras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="players.html" class="nav-link">Lendas do Xadrez</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="ranking.html" class="nav-link">Ranking Atual</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="matches.html" class="nav-link">Partidas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="curiosities.html" class="nav-link">Curiosidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="championship.html" class="nav-link">Campeonato Mundial</a>
+                    </li>
 
-    <header>
-        <h1>Xadrezando - Xadrez Descomplicado</h1>
-    </header>
+                    <!-- Navbar divider (Small screen only) -->
+                    <hr>
+
+                    <li class="nav-item">
+                        <a href="login.html" class="btn btn-sm btn-primary">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="sing_up.html" class="nav-link">Cadastre-se</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <main>
+        <div class="container py-5">
+            <section>
 
-        <section>
+                <h2>Regras do Xadrez</h2>
+    
+                <p id="top">
+                    Alguns fatores devem ser observados para realizar um apartida de xadrez.
+                </p>
+    
+                <p>
+                    O movimento das peças depende de suas característica únicas e o comportamento destas dentro do tabuleiro
+                    definem os rumos da partida.
+                </p>
+    
+                <ol>
+                    <li><a href="#passo1">Primeiro Passo - Arrumando as peças</a></li>
+                    <li><a href="#passo2">Segundo Passo - Movendo as Peças</a></li>
+                    <li><a href="#passo3">Terceiro Passo - Regras Especiais</a></li>
+                </ol>
+    
+                <p>
+                    <em>
+                        Fonte: <a href="https://www.chess.com/pt-BR/como-jogar-xadrez">Chess.com</a>
+                    </em>
+                </p>
+    
+            </section>
+    
+            <section class="my-5">
+                <h3 class="display-5">Passo 1: Como Arumar o Tabuleiro</h3>
 
-            <h2>Regras do Xadrez</h2>
+                <div class="row">
+                    <div class="col-md-9">
+                        <p id="passo1">
+                            No começo da partida o tabuleiro é colocado de forma que cada jogador tem a casa branca (ou de cor
+                            clara) <strong>no canto inferior direito</strong>.
+                        </p>
+                        <p>
+                            As peças são dispostas da mesma forma sempre.<strong> A segunda linha horizontal (ou fileira) é
+                                preenchida com peões. As torres ficam nos cantos, seguidas dos cavalos, bispos e finalmente a dama,
+                                que sempre fica na casa de sua cor (dama branca na casa branca, dama preta na casa preta). O rei
+                                fica na casa remanescente</strong>.
+                        </p>
+                        
+                        <p>
+                            <em>Fonte:
+                                <a href="https://www.chess.com/pt-BR/como-jogar-xadrez">chess.com</a>
+                            </em>
+                        </p>
+                    </div>
+                    
+        
+                    <div class="col-md-3">
+                        <div class="card shadow-sm">
+                            <img src="image/montagem.gif"
+                            alt="Imagem animada que apresenta um tabuleiro verde e branco de xadrez, de uma perspectiva superior no qual as peças são posicionadas uma por uma da sequinte maneira: A segunda linha horizontal (ou fileira) é preenchida com peões. As torres ficam nos cantos, seguidas dos cavalos, bispos e finalmente a dama, que sempre fica na casa de sua cor (dama branca na casa branca, dama preta na casa preta). O rei fica na casa remanescente."
+                            title="Tabuleiro sendo montado"
+                            class="img-fluid card-img-top"                    
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section>
+    
+                <h3 class="display-5">Passo 2: Como as Peças de Xadrez se Movem</h3>
 
-            <p>
-                <a href="index.html">Página Inicial</a>
-            </p>
-
-            <p id="top">
-                Alguns fatores devem ser observados para realizar um apartida de xadrez.
-            </p>
-
-            <p>
-                O movimento das peças depende de suas característica únicas e o comportamento destas dentro do tabuleiro
-                definem os rumos da partida.
-            </p>
-
-            <ol>
-                <li><a href="#passo1">Primeiro Passo - Arrumando as peças</a></li>
-                <li><a href="#passo2">Segundo Passo - Movendo as Peças</a></li>
-                <li><a href="#passo3">Terceiro Passo - Regras Especiais</a></li>
-
-            </ol>
-
-            <p>
-                <em>
-                    Fonte: <a href="https://www.chess.com/pt-BR/como-jogar-xadrez">Chess.com</a>
-                </em>
-            </p>
-
-        </section>
-
-        <section>
-
-            <h3>Passo 1: Como Arumar o Tabuleiro</h3>
-
-            <p>
-                <a href="#top">{Início}</a>
-            </p>
-
-            <p id="passo1">
-                No começo da partida o tabuleiro é colocado de forma que cada jogador tem a casa branca (ou de cor
-                clara) <strong>no canto inferior direito</strong>.
-            </p>
-            <p>
-                As peças são dispostas da mesma forma sempre.<strong> A segunda linha horizontal (ou fileira) é
-                    preenchida com peões. As torres ficam nos cantos, seguidas dos cavalos, bispos e finalmente a dama,
-                    que sempre fica na casa de sua cor (dama branca na casa branca, dama preta na casa preta). O rei
-                    fica na casa remanescente</strong>.
-            </p>
-
-            <img src="image/montagem.gif"
-                alt="Imagem animada que apresenta um tabuleiro verde e branco de xadrez, de uma perspectiva superior no qual as peças são posicionadas uma por uma da sequinte maneira: A segunda linha horizontal (ou fileira) é preenchida com peões. As torres ficam nos cantos, seguidas dos cavalos, bispos e finalmente a dama, que sempre fica na casa de sua cor (dama branca na casa branca, dama preta na casa preta). O rei fica na casa remanescente."
-                title="Tabuleiro sendo montado">
-
-            <p>
-                <em>Fonte:
-                    <a href="https://www.chess.com/pt-BR/como-jogar-xadrez">chess.com</a>
-                </em>
-            </p>
-
-        </section>
-
-        <section>
-
-            <h3>Passo 2: Como as Peças de Xadrez se Movem</h3> <a href="#top">{Início}</a>
-
-            <p id="passo2">
-
-                Cada um dos 6 diferentes tipos de peças se move de forma diferente. As peças não podem mover-se através
-                de outras peças (embora o cavalo possa saltar sobre outras peças) e nunca podem avançar para uma casa
-                que tenha uma das suas próprias peças.
-            </p>
-
-            <p>
-                No entanto, elas podem ser movidas para tomar o lugar de uma peça do oponente que é então capturada. As
-                peças são geralmente movidas para:
-            </p>
-
-            <ul>
-                <li>posições onde podem capturar outras peças (movendo até suas casas e depois as removendo)</li>
-                <li>defender suas próprias peças em caso de captura</li>
-                <li>controlar casas importantes na partida.</li>
-            </ul>
-
-            <h3>Peças e seus Movimentos</h3>
-
-            <ol type="i">
-                <li><a href="#moverei">Rei</a></li>
-                <li><a href="#movedama">Dama</a></li>
-                <li><a href="#movetorre">Torre</a></li>
-                <li><a href="#movebispo">Bispo</a></li>
-                <li><a href="#movecavalo">Cavalo</a></li>
-                <li><a href="#movepeao">Peão</a></li>
-            </ol>
-
-            <h4>Como mover o Rei no Xadrez</h4>
-
-            <p id="moverei">
-                O rei é a peça mais importante, mas também uma das mais fracas. Só pode andar uma casa em qualquer
-                direção - para frente, para trás, para os lados e em diagonal.
-            </p>
-
-            <p>
-                O rei nunca pode se colocar em xeque (posição onde pode ser capturado). Quando é sendo ameaçado por
-                outra peça, isso é conhecido como "xeque".
-            </p>
-
-            <h4>Como mover a Dama no Xadrez</h4>
-
-            <p id="movedama">
-                A dama é a peça mais poderosa. Ela pode se mover em qualquer linha reta - para frente, para trás, para
-                os lados ou em diagonal - contanto que não se mova através de nenhuma de suas próprias peças.
-            </p>
-
-            <p>
-                E, assim como todas as outras peças, se a dama captura a peça do oponente o movimento termina. Note como
-                a dama branca captura a dama preta, forçando o rei preto a se mover.
-            </p>
-
-            <h4>Como mover a Torre no Xadrez</h4>
-
-            <p id="movetorre">
-                As torres podem se mover o quanto elas quiserem, mas somente para cima, para baixo e para os lados.
-            </p>
-
-            <p>
-                As torres são peças particularmente fortes quando estão se protegendo e trabalhando juntas!
-            </p>
-
-            <h4>Como mover o Bispo no Xadrez</h4>
-
-            <p id="movebispo">
-                O bispo pode se mover o quanto quiser, mas somente nas diagonais.
-            </p>
-
-            <p>
-                Cada bispo começa na casa de uma cor (clara ou escura) e deve sempre permanecer nesta cor. Bispos
-                funcionam bem em conjunto pois um compensa a fraqueza do outro.
-            </p>
-
-            <h4>Como mover o Cavalo no Xadrez</h4>
-
-            <p id="movecavalo">
-                Os cavalos se movem de forma diferente das outras peças - andando duas casas em uma direção e então se
-                movendo mais uma casa em um ângulo de 90 graus, ou no formato da letra "L".
-            </p>
-
-            <p>
-                Cavalos são as únicas peças que podem se mover sobre outras peças.
-            </p>
-
-            <h4>Como mover o Peão no Xadrez</h4>
-
-            <p id="movepeao">
-                Peões são incomuns porque eles se movem e capturam de formas diferentes.
-            </p>
-
-            <p>
-                Eles andam para frente, mas só capturam na diagonal. Peões só podem se mover uma casa por vez, exceto em
-                seus primeiros movimentos, quando podem andar por duas casas.
-            </p>
-
-            <p>
-                Os peões só podem capturar nas casas diagonais em frente a eles. Nunca podem capturar para trás. Se
-                houver uma peça imediatamente em frente ao peão, ele não pode se mover ou capturar aquela peça.
-            </p>
-
-        </section>
-
-        <section>
-
-            <h3>Passo 3. Descubra as Regras Especiais do Xadrez</h3> <a href="#top">{Início}</a>
-
-            <p id="passo3">
-                Há algumas regras especiais no xadrez que a princípio não parecem ser lógicas. Elas foram criadas para
-                tornar o xadrez mais divertido e interessante.
-            </p>
-
-            <h3>i. Como promover um Peão no Xadrez</h3>
-
-            <p>
-                Peões têm outra habilidade especial que é quando um peão chega ao outro lado do tabuleiro ele pode se
-                transformar em qualquer outra peça (isso se chama promoção). Um peão pode ser promovido para qualquer
-                outra peça.
-            </p>
-
-            <p>
-                Um erro comum é achar que peões só podem ser promovidos a peças que já foram capturadas. Isto
-                <strong>NÃO</strong> é verdade, você pdoe promovê-lo a qualquer peça, sendo que, geralmente, é promovido
-                a dama. Somente peões podem ser promovidos.
-            </p>
-
-            <h3>ii. Como fazer o "en passant" no Xadrez</h3>
-
-            <p>
-                A última regra sobre peões é chamada de "en passant", que é o termo francês para "na passagem". Se um
-                peão se move para duas casas em seu primeiro lance, e fazendo isso para ao lado de um peão adversário
-                (efetivamente ultrapassado a habilidade do peão adversário em capturá-lo), este outro peão tem a opção
-                de capturá-lo assim que ele passar.
-            </p>
-
-            <p>
-                Este lance especial deve ser feito imediatamente após o primeiro peão ter passado, caso contrário a
-                opção de capturá-lo não é mais possível.
-            </p>
-
-            <h3>iii. Como fazer o roque no Xadrez</h3>
-
-            <p>
-                Uma outra regra especial é chamada roque. Este lance permite que você faça duas coisas importantes em um
-                único lance: levar o seu rei para um lugar seguro (idealmente) e tirar sua torre do canto colocando-a em
-                jogo.
-            </p>
-
-            <p>
-                Na vez de um jogador ele pode mover seu rei duas casas para um lado e depois mover a torre do canto
-                desse lado para que fique bem do lado do rei no lado oposto. (Veja o exemplo abaixo.) No entanto, para
-                fazer o roque, as seguintes condições devem ser atendidas:
-            </p>
-
-            <ul>
-                <li>deve ser o primeiro lance desse rei;</li>
-                <li>deve ser o primeiro lance dessa torre;</li>
-                <li>não pode haver nenhuma peça entre o rei e a torre para este lance;</li>
-                <li> rei não pode ficar em xeque ou passar por um xeque.</li>
-            </ul>
-
-            <p>
-                Note que quando você roca, em uma das direções o rei fica mais perto do canto do tabuleiro. Esse é
-                chamado de roque na ala do rei. Rocar para o outro lado, onde estava a dama, chama-se roque na ala da
-                dama.
-            </p>
-
-            <p>
-                Independentemente de qual lado, o rei sempre se move apenas duas casas quando é feito o roque.
-            </p>
-        </section>
+                <p id="passo2">
+                    Cada um dos 6 diferentes tipos de peças se move de forma diferente. As peças não podem mover-se através
+                    de outras peças (embora o cavalo possa saltar sobre outras peças) e nunca podem avançar para uma casa
+                    que tenha uma das suas próprias peças.
+                </p>
+    
+                <p>
+                    No entanto, elas podem ser movidas para tomar o lugar de uma peça do oponente que é então capturada. As
+                    peças são geralmente movidas para:
+                </p>
+    
+                <ul>
+                    <li>posições onde podem capturar outras peças (movendo até suas casas e depois as removendo)</li>
+                    <li>defender suas próprias peças em caso de captura</li>
+                    <li>controlar casas importantes na partida.</li>
+                </ul>
+    
+                <h4>Peças e seus Movimentos</h4>
+    
+                <ol type="I">
+                    <li><a href="#moverei">Rei</a></li>
+                    <li><a href="#movedama">Dama</a></li>
+                    <li><a href="#movetorre">Torre</a></li>
+                    <li><a href="#movebispo">Bispo</a></li>
+                    <li><a href="#movecavalo">Cavalo</a></li>
+                    <li><a href="#movepeao">Peão</a></li>
+                </ol>
+    
+                <h4>Como mover o Rei no Xadrez</h4>
+    
+                <p id="moverei">
+                    O rei é a peça mais importante, mas também uma das mais fracas. Só pode andar uma casa em qualquer
+                    direção - para frente, para trás, para os lados e em diagonal.
+                </p>
+    
+                <p>
+                    O rei nunca pode se colocar em xeque (posição onde pode ser capturado). Quando é sendo ameaçado por
+                    outra peça, isso é conhecido como "xeque".
+                </p>
+    
+                <h4>Como mover a Dama no Xadrez</h4>
+    
+                <p id="movedama">
+                    A dama é a peça mais poderosa. Ela pode se mover em qualquer linha reta - para frente, para trás, para
+                    os lados ou em diagonal - contanto que não se mova através de nenhuma de suas próprias peças.
+                </p>
+    
+                <p>
+                    E, assim como todas as outras peças, se a dama captura a peça do oponente o movimento termina. Note como
+                    a dama branca captura a dama preta, forçando o rei preto a se mover.
+                </p>
+    
+                <h4>Como mover a Torre no Xadrez</h4>
+    
+                <p id="movetorre">
+                    As torres podem se mover o quanto elas quiserem, mas somente para cima, para baixo e para os lados.
+                </p>
+    
+                <p>
+                    As torres são peças particularmente fortes quando estão se protegendo e trabalhando juntas!
+                </p>
+    
+                <h4>Como mover o Bispo no Xadrez</h4>
+    
+                <p id="movebispo">
+                    O bispo pode se mover o quanto quiser, mas somente nas diagonais.
+                </p>
+    
+                <p>
+                    Cada bispo começa na casa de uma cor (clara ou escura) e deve sempre permanecer nesta cor. Bispos
+                    funcionam bem em conjunto pois um compensa a fraqueza do outro.
+                </p>
+    
+                <h4>Como mover o Cavalo no Xadrez</h4>
+    
+                <p id="movecavalo">
+                    Os cavalos se movem de forma diferente das outras peças - andando duas casas em uma direção e então se
+                    movendo mais uma casa em um ângulo de 90 graus, ou no formato da letra "L".
+                </p>
+    
+                <p>
+                    Cavalos são as únicas peças que podem se mover sobre outras peças.
+                </p>
+    
+                <h4>Como mover o Peão no Xadrez</h4>
+    
+                <p id="movepeao">
+                    Peões são incomuns porque eles se movem e capturam de formas diferentes.
+                </p>
+    
+                <p>
+                    Eles andam para frente, mas só capturam na diagonal. Peões só podem se mover uma casa por vez, exceto em
+                    seus primeiros movimentos, quando podem andar por duas casas.
+                </p>
+    
+                <p>
+                    Os peões só podem capturar nas casas diagonais em frente a eles. Nunca podem capturar para trás. Se
+                    houver uma peça imediatamente em frente ao peão, ele não pode se mover ou capturar aquela peça.
+                </p>
+    
+            </section>
+    
+            <section class="mt-5">
+    
+                <h3 class="display-5">Passo 3: Descubra as Regras Especiais do Xadrez</h3>
+    
+                <p id="passo3">
+                    Há algumas regras especiais no xadrez que a princípio não parecem ser lógicas. Elas foram criadas para
+                    tornar o xadrez mais divertido e interessante.
+                </p>
+    
+                <h4>Como promover um Peão no Xadrez</h4>
+    
+                <p>
+                    Peões têm outra habilidade especial que é quando um peão chega ao outro lado do tabuleiro ele pode se
+                    transformar em qualquer outra peça (isso se chama promoção). Um peão pode ser promovido para qualquer
+                    outra peça.
+                </p>
+    
+                <p>
+                    Um erro comum é achar que peões só podem ser promovidos a peças que já foram capturadas. Isto
+                    <strong>NÃO</strong> é verdade, você pdoe promovê-lo a qualquer peça, sendo que, geralmente, é promovido
+                    a dama. Somente peões podem ser promovidos.
+                </p>
+    
+                <h4>Como fazer o "en passant" no Xadrez</h4>
+    
+                <p>
+                    A última regra sobre peões é chamada de "en passant", que é o termo francês para "na passagem". Se um
+                    peão se move para duas casas em seu primeiro lance, e fazendo isso para ao lado de um peão adversário
+                    (efetivamente ultrapassado a habilidade do peão adversário em capturá-lo), este outro peão tem a opção
+                    de capturá-lo assim que ele passar.
+                </p>
+    
+                <p>
+                    Este lance especial deve ser feito imediatamente após o primeiro peão ter passado, caso contrário a
+                    opção de capturá-lo não é mais possível.
+                </p>
+    
+                <h4>Como fazer o roque no Xadrez</h4>
+    
+                <p>
+                    Uma outra regra especial é chamada roque. Este lance permite que você faça duas coisas importantes em um
+                    único lance: levar o seu rei para um lugar seguro (idealmente) e tirar sua torre do canto colocando-a em
+                    jogo.
+                </p>
+    
+                <p>
+                    Na vez de um jogador ele pode mover seu rei duas casas para um lado e depois mover a torre do canto
+                    desse lado para que fique bem do lado do rei no lado oposto. (Veja o exemplo abaixo.) No entanto, para
+                    fazer o roque, as seguintes condições devem ser atendidas:
+                </p>
+    
+                <ul>
+                    <li>deve ser o primeiro lance desse rei;</li>
+                    <li>deve ser o primeiro lance dessa torre;</li>
+                    <li>não pode haver nenhuma peça entre o rei e a torre para este lance;</li>
+                    <li> rei não pode ficar em xeque ou passar por um xeque.</li>
+                </ul>
+    
+                <p>
+                    Note que quando você roca, em uma das direções o rei fica mais perto do canto do tabuleiro. Esse é
+                    chamado de roque na ala do rei. Rocar para o outro lado, onde estava a dama, chama-se roque na ala da
+                    dama.
+                </p>
+    
+                <p>
+                    Independentemente de qual lado, o rei sempre se move apenas duas casas quando é feito o roque.
+                </p>
+            </section>
+        </div>
     </main>
 
-    <footer>
-        <p>
-            <em>
-                Desenvolvido por: Adam Slabadack 
-                    <a href="https://github.com/arslabadack">
-                        <img src="image/github.png" alt="Logomarca do GitHub. Um gato misturado com polvo. A imagem é monocromática em cinza."
-                        title="arslabadack">
-                    </a>
-                    Eduardo Henrique de Oliveira
-                    <a href="https://github.com/Eduardo-H">
-                        <img src="image/github.png" alt="Logomarca do GitHub. Um gato misturado com polvo. A imagem é monocromática em cinza."
-                        title="Eduardo-H">
-                    </a>
-            </em>
-        </p>
+    <footer class="bg-dark text-white">
+        <div class="container-fluid">
+            <div class="row py-4 text-center">
+                <p>Xadrezando 2021</p>
+                <p class="mb-0">Desenvolvido por: 
+                    <a href="https://github.com/arslabadack">Adam Slabadack </a>, 
+                    <a href="https://github.com/Eduardo-H">Eduardo Henrique de Oliveira</a>
+                </p>
+            </div>
+        </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" 
+        crossorigin="anonymous"
+    ></script>
 </body>
 
 </html>
