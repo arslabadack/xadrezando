@@ -29,3 +29,13 @@ header {
 .card-footer {
     font-size: 14px;
 }
+
+.card-link {
+    text-decoration: none;
+    color: #212529;
+    transition: 0.2s;
+}
+
+.card-link:hover {
+    color: rgb(84, 86, 94);
+}
