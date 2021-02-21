@@ -6,202 +6,297 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="image/horse_chess.ico" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" 
+        crossorigin="anonymous"
+    >
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
     <title>Partidas</title>
-    <style>
-        header,
-        footer {
-            background-color: grey;
-            color: white;
-            padding: 10px;
-            text-transform: uppercase;
-            font-weight: bold;
-        }
-    </style>
 </head>
 
 <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            
+            <a class="navbar-brand" href="index.html">
+                <img src="image/horse_chess.ico" class="navbar-img" alt="Imagem de uma peça de xadrez">
+                <span class="navbar-brand-name">Xadrezando</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="history.html" class="nav-link">História do Xadrez</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="rules.html" class="nav-link">Regras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="players.html" class="nav-link">Lendas do Xadrez</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="ranking.html" class="nav-link">Ranking Atual</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="matches.html" class="nav-link active">Partidas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="curiosities.html" class="nav-link">Curiosidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="championship.html" class="nav-link">Campeonato Mundial</a>
+                    </li>
 
-    <header>
-        <h1>Xadrezando - Xadrez Descomplicado</h1>
-    </header>
+                    <!-- Navbar divider (Small screen only) -->
+                    <hr>
+
+                    <li class="nav-item float-right">
+                        <a href="login.html" class="btn btn-sm btn-primary">Login</a>
+                    </li>
+                    <li class="nav-item float-right">
+                        <a href="sing_up.html" class="nav-link">Cadastre-se</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-3">
+        <header>
+            <div class="overlay">
+                <div class="header-text">
+                    <p class="mb-0">Xadrezando - Xadrez descomplicado</p>
+                </div>
+            </div>
+        </header>
+    </div>
 
     <main>
+        <div class="container py-4 text-align-justify">
+            <section>
+                <h2 id="top">
+                    Partidas Memoráveis da História do Xadrez
+                </h2>
+            </section>
+    
+            <section>
+    
+                <div class="row my-3">
+                    <div class="col-md-9">
+                        <h3 class="display-5">Kasparov vs. Topalov, Wijk aan Zee 1999</h3>
+                        <p>
+                            Apesar de ter perdido um confronto histórico para o programa de computador Deep Blue dois anos antes,
+                            Garry Kasparov estava no auge dos seus poderes em 1999, vencendo torneios por margens grandes e
+                            registando a pontuação mais alta no ranking(2851). Kasparov tem uma longa lista de brilhantismos para
+                            seu crédito, mas esta partida é a sua virtualmente indiscutível, obra-prima.
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card mb-3">
+                            <img src="image/partida1.gif"
+                                alt="Tabuleiro de xadrez verde e branco, animado, que mostra os movimentos da partida entre Kasparov vs. Topalov, Wijk aan Zee"
+                                title="Kasparov vs. Topalov, Wijk aan Zee"
+                                class="img-fluid card-img-top"    
+                            >
+                            <div class="card-footer">
+                                <p class="mb-0">
+                                    <em>
+                                        Kasparov vs. Topalov, Wijk aan Zee.<br>
+                                        Fonte: <a href="https://www.chess.com/pt/article/view/as-melhores-partidas-de-xadrez-de-todos-os-tempos">Chess.com</a>
+                                    </em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="row my-3">
+                    <div class="col-md-9">
+                        <h3 class="display-5">Morphy vs. Allies, Paris Opera 1858</h3>
+                        <p>
+                            Frequentemente chamada a "Partida da Opera," a obra-prima informal de Paul Morphy jogada contra o Duque
+                            de Brunswick e o Conde Isouard. Esta ilustra o valor do desenvolvimento, centralização, e da segurança
+                            do rei, mas mais importante, esta é uma partida perfeitamente concisa para ilustrar a beleza do xadrez.
+                        </p>
+                    </div>
 
-        <section>
+                    <div class="col-md-3">
+                        <div class="card mb-3">
+                            <img src="image/partida2.gif"
+                                alt="Tabuleiro de xadrez verde e branco, animado, que mostra os movimentos da partida entre Morphy vs. Aliados"
+                                title="Morphy vs. Allies, Paris Opera"
+                                class="img-fluid card-img-top"    
+                            >
+                            <div class="card-footer">
+                                <p class="mb-0">
+                                    <em>
+                                        Morphy vs. Allies, Paris Opera.<br>
+                                        Fonte: <a href="https://www.chess.com/pt/article/view/as-melhores-partidas-de-xadrez-de-todos-os-tempos">Chess.com</a>
+                                    </em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <h2 id="top">
-                Partidas Memoráveis da História do Xadrez
-            </h2>
+                <div class="row my-3">
+                    <div class="col-md-9">
+                        <h3 class="display-5">Karpov vs. Kasparov, Campeonato Mundial 1985, partida 16</h3>
+                        <p>
+                            Não existe uma rivalidade maior na história do xadrez do que aquela entre Garry Kasparov e Anatoly
+                            Karpov. As partidas brilhantes que eles disputaram são dignas de cinema. Esta partida do campeonato
+                            mundial de 1985 demonstra Kasparov ao seu melhor, executando sempre cálculos e táticas exatas.
+                        </p>
+                    </div>
 
-            <p>
-                <a href="index.html">Página Inicial</a>
-            </p>
+                    <div class="col-md-3">
+                        <div class="card mb-3">
+                            <img src="image/partida3.gif"
+                                alt="Tabuleiro de xadrez verde e branco, animado, que mostra os movimentos da partida entre Karpov vs. Kasparov"
+                                title="Karpov vs. Kasparov, Campeonato Mundial 1985"
+                                class="img-fluid card-img-top"    
+                            >
+                            <div class="card-footer">
+                                <p class="mb-0">
+                                    <em>
+                                        Karpov vs. Kasparov, Campeonato Mundial 1985.<br>
+                                        Fonte: <a href="https://www.chess.com/pt/article/view/as-melhores-partidas-de-xadrez-de-todos-os-tempos">Chess.com</a>
+                                    </em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        </section>
+                <div class="row my-3">
+                    <div class="col-md-9">
+                        <h3 class="display-5">Byrne vs. Fischer, Nova Iorque 1956</h3>
+                        <p>
+                            Com a idade de 13 anos, Bobby Fischer alertou o mundo para a sua presença numa das mais belas partidas
+                            de todos os tempos contra o IM Donald Byrne, de peças Pretas. Os lances de Fischer: 11...Ca4!! e
+                            17...Be6!! constituem dois dos maiores golpes de martelo na história do xadrez.
+                        </p>
+                    </div>
 
-        <section>
+                    <div class="col-md-3">
+                        <div class="card mb-3">
+                            <img src="image/partida4.webp"
+                                alt="Tabuleiro de xadrez verde e branco, animado, que mostra os movimentos da partida entre Byrne vs. Fischer"
+                                title="Byrne vs. Fischer"
+                                class="img-fluid card-img-top"    
+                            >
+                            <div class="card-footer">
+                                <p class="mb-0">
+                                    <em>
+                                        Byrne vs. Fischer.<br>
+                                        Fonte: <a href="https://www.chess.com/pt/article/view/as-melhores-partidas-de-xadrez-de-todos-os-tempos">Chess.com</a>
+                                    </em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row my-3">
+                    <div class="col-md-8">
+                        <h3 class="display-5">Kasparov vs. Deep Blue, 1996</h3>
+                        <p>
+                            De um lado: Garry Kasparov, Grande Mestre, considerado um dos maiores enxadristas de todos os tempos.
+                            Ele, campeão mundial de xadrez de 1985 a 2000. Do outro lado: Deep Blue, um supercomputador da IBM
+                            projetado para jogar em pé de igualdade contra qualquer jogador de xadrez do mundo. Uma batalha entre
+                            homem e máquina.
+                        </p>
+            
+                        <p>
+                            O primeiro embate Kasparov x Deep Blue aconteceu em 1996, mas o primeiro desafio do enxadrista soviético
+                            envolvendo computadores aconteceu, na verdade, em 1985, quando Garry Kasparov venceu 32 máquinas
+                            simultaneamente.
+                        </p>
+            
+                        <p>
+                            Em 1996 aconteceu o primeiro embate entre o campeão Kasparov e o desafiante pouco convencional Deep
+                            Blue. Para a surpresa de todos, o computador venceu o primeiro jogo, disputado na Filadélfia. Pela
+                            primeira vez, uma máquina havia vencido um campeão mundial de xadrez usando as regras normais de
+                            torneio. Com um pouco menos de frieza, Kasparov poderia ter se assustado com tal feito e se
+                            desequilibrado para disputar os próximos jogos. No entanto, o enxadrista contornou a situação e virou o
+                            match, que terminou 4 a 2 para o russo.
+                        </p>
+            
+                        <p>
+                            <em>
+                                Fonte: <a href="https://rafaelleitao.com/o-homem-e-a-mquina-o-match-kasparov-x-deep-blue/">Rafael
+                                    Leitão</a>
+                            </em>
+                        </p>
+            
+                        <p>
+                            Uma análise detalhada desta memorável partida pode ser vista <a
+                                href="https://www.youtube.com/watch?v=tEC9umM_y5A&ab_channel=XadrezBrasil">neste vídeo</a> feito
+                            pelo Xadrez Brasil.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                            <img src="image/kasparovvsdeepblue.jpg"
+                                alt="Garry Kasparov usando terno cinza e gravata verde, está apoiando a cabeça com a mão em uma expressão pensativa. Há uma mesa no centro com um tabuleiro de xadrez mostrando uma partida pela metade. Ao lado do tabuleiro está um caderno de anotações de Kasparov. Há um relógio laranjado que marca o tempo dos movimentos das partidas. Em cada lado do relógio encontra-0se uma bandeira, sendo uma da Rússia e outra dos Estados Unidos. Oposto a Kasparov está seu oponente. Deep Blue. Uma tela de computador que exibe a partida e em frente dela há um teclado, ambos pretos. Há um homem de costas que realiza os movimentos no tabuleiro segundo o que o computador indica. Ao lado do teclado há o caderno de anotações usado pelo homem que registra os movimentos do computador. Há uma estante com livros ao fundo e ao lado desta, uma planta. A sala é verde e branca."
+                                title="Kasparov vs. IBM Deep Blue"
+                                class="img-fluid card-img-top"
+                            >
+                            <div class="card-footer">
+                                <p class="mb-0">
+                                    <em>
+                                        Kasparov vs. IBM Deep Blue.<br>
+                                        Fonte: <a href="https://www.tecmundo.com.br/supercomputadores/98493-ha-20-anos-pc-derrotava-o-humano-xadrez.htm">TecMundo</a>
+                                    </em>
+                                </p>
+                            </div>
+                        </div>
 
-            <h3>Kasparov vs. Topalov, Wijk aan Zee 1999</h3>
-
-            <p>
-                Apesar de ter perdido um confronto histórico para o programa de computador Deep Blue dois anos antes,
-                Garry Kasparov estava no auge dos seus poderes em 1999, vencendo torneios por margens grandes e
-                registando a pontuação mais alta no ranking(2851). Kasparov tem uma longa lista de brilhantismos para
-                seu crédito, mas esta partida é a sua virtualmente indiscutível, obra-prima.
-            </p>
-
-            <img src="image/partida1.gif"
-                alt="Tabuleiro de xadrez verde e branco, animado, que mostra os movimentos da partida entre Kasparov vs. Topalov, Wijk aan Zee"
-                title="Kasparov vs. Topalov, Wijk aan Zee">
-
-            <p>
-                <em>
-                    Kasparov vs. Topalov, Wijk aan Zee. Fonte: <a
-                        href="https://www.chess.com/pt/article/view/as-melhores-partidas-de-xadrez-de-todos-os-tempos">Chess.com</a>
-                </em>
-            </p>
-
-            <h3>Morphy vs. Allies, Paris Opera 1858</h3>
-
-            <p>
-                <a href="#top">{Início da Página}</a>
-            </p>
-
-            <p>
-                Frequentemente chamada a "Partida da Opera," a obra-prima informal de Paul Morphy jogada contra o Duque
-                de Brunswick e o Conde Isouard. Esta ilustra o valor do desenvolvimento, centralização, e da segurança
-                do rei, mas mais importante, esta é uma partida perfeitamente concisa para ilustrar a beleza do xadrez.
-            </p>
-
-            <img src="image/partida2.gif"
-                alt="Tabuleiro de xadrez verde e branco, animado, que mostra os movimentos da partida entre Morphy vs. Aliados"
-                title="Morphy vs. Allies, Paris Opera">
-
-            <p>
-                <em>
-                    Morphy vs. Allies, Paris Opera. Fonte: <a
-                        href="https://www.chess.com/pt/article/view/as-melhores-partidas-de-xadrez-de-todos-os-tempos">Chess.com</a>
-                </em>
-            </p>
-
-            <h3>Karpov vs. Kasparov, Campeonato Mundial 1985, partida 16</h3>
-
-            <p>
-                <a href="#top">{Início da Página}</a>
-            </p>
-
-            <p>
-                Não existe uma rivalidade maior na história do xadrez do que aquela entre Garry Kasparov e Anatoly
-                Karpov. As partidas brilhantes que eles disputaram são dignas de cinema. Esta partida do campeonato
-                mundial de 1985 demonstra Kasparov ao seu melhor, executando sempre cálculos e táticas exatas.
-            </p>
-
-            <img src="image/partida3.gif"
-                alt="Tabuleiro de xadrez verde e branco, animado, que mostra os movimentos da partida entre Karpov vs. Kasparov"
-                title="Karpov vs. Kasparov, Campeonato Mundial 1985">
-
-            <p>
-                <em>
-                    Karpov vs. Kasparov, Campeonato Mundial 1985. Fonte: <a
-                        href="https://www.chess.com/pt/article/view/as-melhores-partidas-de-xadrez-de-todos-os-tempos">Chess.com</a>
-                </em>
-            </p>
-
-            <h3>Byrne vs. Fischer, Nova Iorque 1956</h3>
-
-            <p>
-                <a href="#top">{Início da Página}</a>
-            </p>
-
-            <p>
-                Com a idade de 13 anos, Bobby Fischer alertou o mundo para a sua presença numa das mais belas partidas
-                de todos os tempos contra o IM Donald Byrne, de peças Pretas. Os lances de Fischer: 11...Ca4!! e
-                17...Be6!! constituem dois dos maiores golpes de martelo na história do xadrez.
-            </p>
-
-            <img src="image/partida4.webp"
-                alt="Tabuleiro de xadrez verde e branco, animado, que mostra os movimentos da partida entre Byrne vs. Fischer"
-                title="Byrne vs. Fischer">
-
-            <p>
-                <em>
-                    Byrne vs. Fischer. Fonte: <a
-                        href="https://www.chess.com/pt/article/view/as-melhores-partidas-de-xadrez-de-todos-os-tempos">Chess.com</a>
-                </em>
-            </p>
-
-            <h3>Kasparov vs. Deep Blue, 1996</h3>
-
-            <p>
-                <a href="#top">{Início da Página}</a>
-            </p>
-
-            <img src="image/kasparovvsdeepblue.jpg"
-                alt="Garry Kasparov usando terno cinza e gravata verde, está apoiando a cabeça com a mão em uma expressão pensativa. Há uma mesa no centro com um tabuleiro de xadrez mostrando uma partida pela metade. Ao lado do tabuleiro está um caderno de anotações de Kasparov. Há um relógio laranjado que marca o tempo dos movimentos das partidas. Em cada lado do relógio encontra-0se uma bandeira, sendo uma da Rússia e outra dos Estados Unidos. Oposto a Kasparov está seu oponente. Deep Blue. Uma tela de computador que exibe a partida e em frente dela há um teclado, ambos pretos. Há um homem de costas que realiza os movimentos no tabuleiro segundo o que o computador indica. Ao lado do teclado há o caderno de anotações usado pelo homem que registra os movimentos do computador. Há uma estante com livros ao fundo e ao lado desta, uma planta. A sala é verde e branca."
-                title="Kasparov vs. IBM Deep Blue">
-
-            <p>
-                <em>
-                    Kasparov vs. IBM Deep Blue. Fonte: <a
-                        href="https://www.tecmundo.com.br/supercomputadores/98493-ha-20-anos-pc-derrotava-o-humano-xadrez.htm">TecMundo</a>
-                </em>
-            </p>
-
-            <p>
-                De um lado: Garry Kasparov, Grande Mestre, considerado um dos maiores enxadristas de todos os tempos.
-                Ele, campeão mundial de xadrez de 1985 a 2000. Do outro lado: Deep Blue, um supercomputador da IBM
-                projetado para jogar em pé de igualdade contra qualquer jogador de xadrez do mundo. Uma batalha entre
-                homem e máquina.
-            </p>
-
-            <p>
-                O primeiro embate Kasparov x Deep Blue aconteceu em 1996, mas o primeiro desafio do enxadrista soviético
-                envolvendo computadores aconteceu, na verdade, em 1985, quando Garry Kasparov venceu 32 máquinas
-                simultaneamente.
-            </p>
-
-            <p>
-                Em 1996 aconteceu o primeiro embate entre o campeão Kasparov e o desafiante pouco convencional Deep
-                Blue. Para a surpresa de todos, o computador venceu o primeiro jogo, disputado na Filadélfia. Pela
-                primeira vez, uma máquina havia vencido um campeão mundial de xadrez usando as regras normais de
-                torneio. Com um pouco menos de frieza, Kasparov poderia ter se assustado com tal feito e se
-                desequilibrado para disputar os próximos jogos. No entanto, o enxadrista contornou a situação e virou o
-                match, que terminou 4 a 2 para o russo.
-            </p>
-
-            <p>
-                <em>
-                    Fonte: <a href="https://rafaelleitao.com/o-homem-e-a-mquina-o-match-kasparov-x-deep-blue/">Rafael
-                        Leitão</a>
-                </em>
-            </p>
-
-            <p>
-                Uma análise detalhada desta memorável partida pode ser vista <a
-                    href="https://www.youtube.com/watch?v=tEC9umM_y5A&ab_channel=XadrezBrasil">neste vídeo</a> feito
-                pelo Xadrez Brasil.
-            </p>
-
-        </section>
-
+                        
+                    </div>
+                </div>
+    
+                
+    
+                
+    
+                
+    
+            </section>
+        </div>
     </main>
 
-    <footer>
-        <p>
-            <em>
-                Desenvolvido por: Adam Slabadack 
-                    <a href="https://github.com/arslabadack">
-                        <img src="image/github.png" alt="Logomarca do GitHub. Um gato misturado com polvo. A imagem é monocromática em cinza."
-                        title="arslabadack">
-                    </a>
-                    Eduardo Henrique de Oliveira
-                    <a href="https://github.com/Eduardo-H">
-                        <img src="image/github.png" alt="Logomarca do GitHub. Um gato misturado com polvo. A imagem é monocromática em cinza."
-                        title="Eduardo-H">
-                    </a>
-            </em>
-        </p>
+    <footer class="bg-dark text-white">
+        <div class="container-fluid">
+            <div class="row py-4 text-center">
+                <p>Xadrezando 2021</p>
+                <p class="mb-0">Desenvolvido por: 
+                    <a href="https://github.com/arslabadack">Adam Slabadack </a>, 
+                    <a href="https://github.com/Eduardo-H">Eduardo Henrique de Oliveira</a>
+                </p>
+            </div>
+        </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" 
+        crossorigin="anonymous"
+    ></script>
 </body>
 
 </html>
