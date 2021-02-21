@@ -6,163 +6,219 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="image/horse_chess.ico" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" 
+        crossorigin="anonymous"
+    >
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
     <title>Curiosidades</title>
-    <style>
-        header,
-        footer {
-            background-color: grey;
-            color: white;
-            padding: 10px;
-            text-transform: uppercase;
-            font-weight: bold;
-        }
-    </style>
 </head>
 
 <body>
 
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            
+            <a class="navbar-brand" href="index.html">
+                <img src="image/horse_chess.ico" class="navbar-img" alt="Imagem de uma peça de xadrez">
+                <span class="navbar-brand-name">Xadrezando</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="history.html" class="nav-link">História do Xadrez</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="rules.html" class="nav-link">Regras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="players.html" class="nav-link">Lendas do Xadrez</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="ranking.html" class="nav-link">Ranking Atual</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="matches.html" class="nav-link">Partidas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="curiosities.html" class="nav-link active">Curiosidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="championship.html" class="nav-link">Campeonato Mundial</a>
+                    </li>
 
-    <header>
-        <h1>Xadrezando - Xadrez Descomplicado</h1>
-    </header>
+                    <!-- Navbar divider (Small screen only) -->
+                    <hr>
+
+                    <li class="nav-item float-right">
+                        <a href="login.html" class="btn btn-sm btn-primary">Login</a>
+                    </li>
+                    <li class="nav-item float-right">
+                        <a href="sing_up.html" class="nav-link">Cadastre-se</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-3">
+        <header>
+            <div class="overlay">
+                <div class="header-text">
+                    <p class="mb-0">Xadrezando - Xadrez descomplicado</p>
+                </div>
+            </div>
+        </header>
+    </div>
 
     <main>
+        <div class="container my-4 text-align-justify">
+            <section>
 
-        <section>
-
-            <h2>Curiosidades Sobre o Xadrez</h2>
-
-            <p>
-                <a href="index.html">Página Inicial</a>
-            </p>
-
-            <img src="image/xadrez1.webp"
-                alt="Tabuleiro de xadrez pronto para iniciar o jogo. Em primeiro plano algumas peças brancas posicionadas, aonde podemos distinguir um peão, a torre, o cavalo, o bispo e o rei. em segundo plano aparecem as peças pretas, neste caso na cor marrom, aonde podemos diferenciar os peões, o cavalo e o bispo, aparecendo apenas pedaços das outras peças."
-                title="Chess board - Licença Creative Commons">
-
-        </section>
-
-        <section>
-
-            <h3>Movendo o rei</h3>
-
-            <p>
-                Há algum tempo foram feitos alguns cálculos sobre a movimentação do Rei no tabuleiro, e chegou-se a uma
-                incrível descoberta. Partindo da sua casa inicial (e1) e seguindo o caminho mais curto, ou seja, em 07
-                lances, pode atingir a oitava (8ª) casa (e8) de 393 modos diferentes.
-            </p>
-
-            <h3>Rei e torre</h3>
-
-            <p>
-                Um final de partida com o rei e a torre pode formar 216 posições diferentes de mate; um final de rei e
-                dama contra rei: 364.
-            </p>
-
-            <h3>Xadrez na escola</h3>
-
-            <p>
-                O Xadrez é disciplina escolar obrigatória na Romênia e as notas em Matemática dependem em 33% do
-                desempenho no Xadrez.
-            </p>
-
-            <h3>Os 10 primeiros lances</h3>
-
-            <p>
-                No xadrez existem precisamente 169.518.829.100.544 quatrilhões (15 zeros) de maneiras de jogar apenas os
-                dez primeiros lances. Para os 40 lances seguintes de um jogo inteiro, o número é estimado em 25 x 10
-                elevado a 115 potência. O número inteiro de átomos em todo o universo é apenas uma pequena fração desse
-                resultado.
-            </p>
-
-            <h3>O campeão mais jovem</h3>
-
-            <p>
-                O campeão nacional absoluto mais jovem de todos os tempos e de todas as modalidades esportivas é um
-                jogador de Xadrez. Trata-se do peruano Júlio Granda Zuñinga, campeão nacional aos 6 anos de idade.
-            </p>
-
-            <h3>O jogo mais longo</h3>
-
-            <p>
-                O jogo o mais longo de xadrez de todos os tempos jogados por jogadores top do ranking teve 269
-                movimentos de Ivan Nikolic e Goran Arsovic em Belgrado em 1989. Durou mais de 20 horas, e resultou em um
-                empate.
-            </p>
-
-            <h3>Xeque-mate!</h3>
-
-            <p>
-                A palavra "Xeque-mate" vêm da frase persa "Shah Mat", que significa "o rei está morto".
-            </p>
-
-            <h3>Super paciência</h3>
-
-            <p>
-                O movimento mais lento registrado foi de Francisco R. Torres Trois, levou 2 horas e 20 minutos para
-                fazer um movimento em um jogo contra Luis M.C.P. Santos, em Vigo, Espanha em 1980. Trois tinha somente
-                dois movimentos possíveis a considerar.
-            </p>
-
-            <h3>As posições do Rei</h3>
-
-            <p>
-                Dois reis podem ocupar no tabuleiro 3612 posições diferentes. Dois reis e duas peças quaisquer podem
-                forma, aproximadamente, 12.000.000 de posições diferentes. Dez peças: 34.254.125.120.000.000.
-            </p>
-
-            <h3>O Dia Internacional do Enxadrismo</h3>
-
-            <p>
-                O Dia Internacional do Enxadrismo é comemorado todos os anos no dia 19 de novembro, data de nascimento
-                de José Raúl Capablanca, considerado um dos maiores enxadristas de todos os tempos e o único
-                hispano-americano a se sagrar campeão mundial.
-            </p>
-
-            <h3>O Gambito da Rainha</h3>
-
-            <p>
-                O gambito da Rainha (<a href="https://www.netflix.com/br/title/80234304">The Queen's Gambit, Netflix -
-                    2020</a>) é uma minissérie, baseada no livro de Water Tevis, que conta a história de Beth Harmon,
-                uma prodígio do xadrez que enfrenta todos os desafios de ser uma mulher enxadrista nos anos 60.
-            </p>
-
-            <p>
-                O mais impressionante é a repercursão da série, que por sinal é excelente. <a
-                    href="https://canaltech.com.br/mercado/serie-o-gambito-da-rainha-fez-venda-de-jogos-de-xadrez-explodir-nos-eua-175498/">As
-                    vendas de tabuleiros de xadrez aumentaram 80% nos Estados Unidos</a>, na
-                semana de estreia <a
-                    href="https://www.correio24horas.com.br/noticia/nid/sucesso-de-o-gambito-da-rainha-leva-a-aumento-de-interesse-pelo-xadrez/">,
-                    as buscas por "jogos de xadrez" no Google cresceram 41% - e continuaram crescendo
-                    a ponto de atingir seu nível mais alto dos últimos sete anos, em novembro.</a>
-            </p>
-
-            <p>
-                Mas afinal, o que é um gambito? A revista Superinteressante <a
-                    href="https://super.abril.com.br/cultura/o-que-e-o-gambito-da-rainha-entenda-o-lance-de-xadrez-que-batiza-a-serie/">preparou
-                    uma reportagem que explica o movimento que da nome à minissérie</a>.
-            </p>
-
-        </section>
-
+                <h2>Curiosidades Sobre o Xadrez</h2>
+    
+                <img src="image/xadrez1.webp"
+                    alt="Tabuleiro de xadrez pronto para iniciar o jogo. Em primeiro plano algumas peças brancas posicionadas, aonde podemos distinguir um peão, a torre, o cavalo, o bispo e o rei. em segundo plano aparecem as peças pretas, neste caso na cor marrom, aonde podemos diferenciar os peões, o cavalo e o bispo, aparecendo apenas pedaços das outras peças."
+                    title="Chess board - Licença Creative Commons">
+    
+            </section>
+    
+            <section>
+    
+                <h3>Movendo o rei</h3>
+    
+                <p>
+                    Há algum tempo foram feitos alguns cálculos sobre a movimentação do Rei no tabuleiro, e chegou-se a uma
+                    incrível descoberta. Partindo da sua casa inicial (e1) e seguindo o caminho mais curto, ou seja, em 07
+                    lances, pode atingir a oitava (8ª) casa (e8) de 393 modos diferentes.
+                </p>
+    
+                <h3>Rei e torre</h3>
+    
+                <p>
+                    Um final de partida com o rei e a torre pode formar 216 posições diferentes de mate; um final de rei e
+                    dama contra rei: 364.
+                </p>
+    
+                <h3>Xadrez na escola</h3>
+    
+                <p>
+                    O Xadrez é disciplina escolar obrigatória na Romênia e as notas em Matemática dependem em 33% do
+                    desempenho no Xadrez.
+                </p>
+    
+                <h3>Os 10 primeiros lances</h3>
+    
+                <p>
+                    No xadrez existem precisamente 169.518.829.100.544 quatrilhões (15 zeros) de maneiras de jogar apenas os
+                    dez primeiros lances. Para os 40 lances seguintes de um jogo inteiro, o número é estimado em 25 x 10
+                    elevado a 115 potência. O número inteiro de átomos em todo o universo é apenas uma pequena fração desse
+                    resultado.
+                </p>
+    
+                <h3>O campeão mais jovem</h3>
+    
+                <p>
+                    O campeão nacional absoluto mais jovem de todos os tempos e de todas as modalidades esportivas é um
+                    jogador de Xadrez. Trata-se do peruano Júlio Granda Zuñinga, campeão nacional aos 6 anos de idade.
+                </p>
+    
+                <h3>O jogo mais longo</h3>
+    
+                <p>
+                    O jogo o mais longo de xadrez de todos os tempos jogados por jogadores top do ranking teve 269
+                    movimentos de Ivan Nikolic e Goran Arsovic em Belgrado em 1989. Durou mais de 20 horas, e resultou em um
+                    empate.
+                </p>
+    
+                <h3>Xeque-mate!</h3>
+    
+                <p>
+                    A palavra "Xeque-mate" vêm da frase persa "Shah Mat", que significa "o rei está morto".
+                </p>
+    
+                <h3>Super paciência</h3>
+    
+                <p>
+                    O movimento mais lento registrado foi de Francisco R. Torres Trois, levou 2 horas e 20 minutos para
+                    fazer um movimento em um jogo contra Luis M.C.P. Santos, em Vigo, Espanha em 1980. Trois tinha somente
+                    dois movimentos possíveis a considerar.
+                </p>
+    
+                <h3>As posições do Rei</h3>
+    
+                <p>
+                    Dois reis podem ocupar no tabuleiro 3612 posições diferentes. Dois reis e duas peças quaisquer podem
+                    forma, aproximadamente, 12.000.000 de posições diferentes. Dez peças: 34.254.125.120.000.000.
+                </p>
+    
+                <h3>O Dia Internacional do Enxadrismo</h3>
+    
+                <p>
+                    O Dia Internacional do Enxadrismo é comemorado todos os anos no dia 19 de novembro, data de nascimento
+                    de José Raúl Capablanca, considerado um dos maiores enxadristas de todos os tempos e o único
+                    hispano-americano a se sagrar campeão mundial.
+                </p>
+    
+                <h3>O Gambito da Rainha</h3>
+    
+                <p>
+                    O gambito da Rainha (<a href="https://www.netflix.com/br/title/80234304">The Queen's Gambit, Netflix -
+                        2020</a>) é uma minissérie, baseada no livro de Water Tevis, que conta a história de Beth Harmon,
+                    uma prodígio do xadrez que enfrenta todos os desafios de ser uma mulher enxadrista nos anos 60.
+                </p>
+    
+                <p>
+                    O mais impressionante é a repercursão da série, que por sinal é excelente. <a
+                        href="https://canaltech.com.br/mercado/serie-o-gambito-da-rainha-fez-venda-de-jogos-de-xadrez-explodir-nos-eua-175498/">As
+                        vendas de tabuleiros de xadrez aumentaram 80% nos Estados Unidos</a>, na
+                    semana de estreia <a
+                        href="https://www.correio24horas.com.br/noticia/nid/sucesso-de-o-gambito-da-rainha-leva-a-aumento-de-interesse-pelo-xadrez/">,
+                        as buscas por "jogos de xadrez" no Google cresceram 41% - e continuaram crescendo
+                        a ponto de atingir seu nível mais alto dos últimos sete anos, em novembro.</a>
+                </p>
+    
+                <p>
+                    Mas afinal, o que é um gambito? A revista Superinteressante <a
+                        href="https://super.abril.com.br/cultura/o-que-e-o-gambito-da-rainha-entenda-o-lance-de-xadrez-que-batiza-a-serie/">preparou
+                        uma reportagem que explica o movimento que da nome à minissérie</a>.
+                </p>
+    
+            </section>
+        </div>
     </main>
 
-    <footer>
-        <p>
-            <em>
-                Desenvolvido por: Adam Slabadack 
-                    <a href="https://github.com/arslabadack">
-                        <img src="image/github.png" alt="Logomarca do GitHub. Um gato misturado com polvo. A imagem é monocromática em cinza."
-                        title="arslabadack">
-                    </a>
-                    Eduardo Henrique de Oliveira
-                    <a href="https://github.com/Eduardo-H">
-                        <img src="image/github.png" alt="Logomarca do GitHub. Um gato misturado com polvo. A imagem é monocromática em cinza."
-                        title="Eduardo-H">
-                    </a>
-            </em>
-        </p>
+    <footer class="bg-dark text-white">
+        <div class="container-fluid">
+            <div class="row py-4 text-center">
+                <p>Xadrezando 2021</p>
+                <p class="mb-0">Desenvolvido por: 
+                    <a href="https://github.com/arslabadack">Adam Slabadack </a>, 
+                    <a href="https://github.com/Eduardo-H">Eduardo Henrique de Oliveira</a>
+                </p>
+            </div>
+        </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" 
+        crossorigin="anonymous"
+    ></script>
 </body>
 
 </html>
