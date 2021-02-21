@@ -6,201 +6,317 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="image/horse_chess.ico" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" 
+        crossorigin="anonymous"
+    >
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
     <title>Jogadores</title>
-    <style>
-        header,
-        footer {
-            background-color: grey;
-            color: white;
-            padding: 10px;
-            text-transform: uppercase;
-            font-weight: bold;
-        }
-    </style>
 </head>
 
 <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            
+            <a class="navbar-brand" href="index.html">
+                <img src="image/horse_chess.ico" class="navbar-img" alt="Imagem de uma peça de xadrez">
+                <span class="navbar-brand-name">Xadrezando</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="history.html" class="nav-link">História do Xadrez</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="rules.html" class="nav-link">Regras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="players.html" class="nav-link active">Lendas do Xadrez</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="ranking.html" class="nav-link">Ranking Atual</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="matches.html" class="nav-link">Partidas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="curiosities.html" class="nav-link">Curiosidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="championship.html" class="nav-link">Campeonato Mundial</a>
+                    </li>
 
-    <header>
-        <h1>Xadrezando - Xadrez Descomplicado</h1>
-    </header>
+                    <!-- Navbar divider (Small screen only) -->
+                    <hr>
 
+                    <li class="nav-item float-right">
+                        <a href="login.html" class="btn btn-sm btn-primary">Login</a>
+                    </li>
+                    <li class="nav-item float-right">
+                        <a href="sing_up.html" class="nav-link">Cadastre-se</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-3">
+        <header>
+            <div class="overlay">
+                <div class="header-text">
+                    <p class="mb-0">Xadrezando - Xadrez descomplicado</p>
+                </div>
+            </div>
+        </header>
+    </div>
     <main>
+        <div class="container py-4 text-align-justify">
+            <section>
 
-        <section>
+                <h2>
+                    Melhores Jogadores de Todos os Tempos
+                </h2>
+    
+                <p>
+                    A história do xadrez é permeada com grandes lendas. Jogadores excepcionais e que nos presentearam com
+                    exibições icônicas.
+                </p>
+                <p>
+                    Eles se sobressaíram aos demais, deixando um marco na história do jogo.
+                </p>
+    
+            </section>
+    
+            <section>
+    
+                <h2>
+                    Os Cinco Maiores Jogadores da História
+                </h2>
+    
+                <p>
+                    <em>
+                        Fonte: <a href="https://www.rankings.com.br/melhores-jogadores-de-xadrez/">Rankings</a>
+                    </em>
+                </p>
+    
 
-            <h2>
-                Melhores Jogadores de Todos os Tempos
-            </h2>
+                <h3>
+                    5°- JOSÉ RAÚL CAPABLANCA – CUBA, 1888-1942
+                </h3>
+                <div class="row my-3">
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                            <img 
+                                src="image/capablanca.png"
+                                alt="Homem em pé, olhando para a câmera. Usa um terno com gravata e colete. Expressão séria e cabelos penteados para trás. Está em um saguão amplo aonde encontram-se vários homens  de terno e vários tabuleiros de xadrez. A imagem está em tom sépia, indicando que é antiga"
+                                title="José Raúl Capablanca"
+                                class="img-fluid card-img-top"    
+                            >
+                            <div class="card-footer">
+                                <p class="mb-0">
+                                    <em>
+                                        José Raul Capablanca.<br> 
+                                        Fonte: <a href="https://www.rankings.com.br/melhores-jogadores-de-xadrez/" target="_blank">Rankings</a>
+                                    </em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-8">
+                        <p>
+                            José Raúl Capablanca foi um jogador de xadrez cubano que foi campeão mundial de xadrez de 1921 a 1927.
+                            Um dos maiores jogadores de todos os tempos, ele foi famoso por sua excepcional habilidade de fim de
+                            jogo e velocidade para jogar.
+                        </p>
+                        <p>
+                            Pelas suas realizações no mundo de xadrez, maestria sobre o tabuleiro e seu estilo de jogar
+                            relativamente simples, ele foi apelidado de Máquina de Xadrez Humana.
+                        </p>
+                    </div>
+                    
+                </div>
+    
+                <h3>
+                    4°- BOBBY FISCHER – ESTADOS UNIDOS, 1943-2008
+                </h3>
+    
+                <div class="row my-3">
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                            <img 
+                                src="image/fischer.jpg"
+                                alt="Homem branco com expressão séria olha para a câmera. Cabelos levemente grisalhos está usando uma camisa branca e gravata azul. Ao fundo uma paisagem fora de foco do que aparentam ser árvores."
+                                title="Bobby Fischer"
+                                class="img-fluid card-img-top"    
+                            >
+                            <div class="card-footer">
+                                <p class="mb-0">
+                                    <em>
+                                        Bobbby Fischer.<br>
+                                        Fonte: <a href="https://www.rankings.com.br/melhores-jogadores-de-xadrez/" target="_blank">Rankings</a>
+                                    </em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-8">
+                        <p>
+                            Bobby foi um jogador americano e décimo primeiro Campeão Mundial. É amplamente considerado como um dos
+                            melhores jogadores de xadrez de todos os tempos. Fischer foi também o autor do Xadrez best-selling.
+                        </p>
+                        <p>
+                            Considerado uma lenda do xadrez, aos 13 anos, Fischer se tornou famoso por seu jogo, “O Jogo do Século”,
+                            contra Donald Byrne em Nova York. Aos 15 anos de idade se tornou o mais novo GM e candidato para
+                            Campeonato Mundial.
+                        </p>
+                    </div>
+                    
+                </div>
+    
+                <h3>
+                    3°- EMANUEL LASKER – ALEMANHA, 1868-1941
+                </h3>
+    
 
-            <p>
-                <a href="index.html">Página Inicial</a>
-            </p>
+                <div class="row my-3">
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                            <img 
+                                src="image/lasker.jpg"
+                                alt="duas imagens do mesmo homem. Em ambas aparece com o cabelo despenteado e bigode, usa um terno com gravata e colete. Ambas imagens estão em preto e branco. Na imagem da esquerda, o homem aparece olhando para a câmera com expressão séria. Na imagem da direita encontra-se fumando um charuto com as mãos unidas sobre uma possível mesa e olhando para baixo."
+                                title="Emanuel Lasker"
+                                class="img-fluid card-img-top"    
+                            >
+                            <div class="card-footer">
+                                <p class="mb-0">
+                                    <em>
+                                        Emanuel Lasker.<br>
+                                        Fonte: <a href="https://www.rankings.com.br/melhores-jogadores-de-xadrez/" target="_blank">Rankings</a>
+                                    </em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-            <p>
-                A história do xadrez é permeada com grandes lendas. Jogadores excepcionais e que nos presentearam com
-                exibições icônicas.
-            </p>
-            <p>
-                Eles se sobressaíram aos demais, deixando um marco na história do jogo.
-            </p>
+                    <div class="col-md-8">
+                        <p>
+                            Emanuel foi um jogador alemão, matemático e filósofo que foi campeão mundial de xadrez por 27 anos. Em
+                            seu primeiro, Lasker foi um dos campeões mais dominantes, e ainda é considerado um dos jogadores mais
+                            fortes na história.
+                        </p>
+                        <p>
+                            Seus contemporâneos afirmaram que Lasker usava jogo mental, e até se movia deliberadamente errado para
+                            confundir os adversários. Uma recente análise, no entanto, indica que ele foi à frente do seu tempo e
+                            usava uma abordagem mais flexível que seus contemporâneos. Ele publicou 5 livros e revistas de xadrez.
+                        </p>
+                    </div>
+                </div>
+    
+                <h3>
+                    2°- ANATOLY KARPOV – RÚSSIA, 1951-
+                </h3>
+    
+                <div class="row my-3">
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                            <img 
+                                src="image/karpov.png"
+                                alt="Homem idoso com expressão seria, encontra-se sentado de frente para a câmera. Usa um terno cinza de risca e uma camisa branca. Faz um movimento de jogo com a mão direita./ Ao fundo uma parede com papel de parede listrado em verde claro."
+                                title="Anatoly Karpov"
+                                class="img-fluid card-img-top"    
+                            >
+                            <div class="card-footer">
+                                <p class="mb-0">
+                                    <em>
+                                        Anatoly Karpov.<br>
+                                        Fonte: <a href="https://www.rankings.com.br/melhores-jogadores-de-xadrez/" target="_blank">Rankings</a>
+                                    </em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-        </section>
+                    <div class="col-md-8">
+                        <p>
+                            É um grande mestre de xadrez soviético/russo e ex-Campeão Mundial. Ele foi o oficial campeão mundial de
+                            1975 a 1985 quando foi derrotado por Garry Kasparov.
+                        </p>
+                    </div>
+                </div>
 
-        <section>
+                <h3>
+                    1°- GARRY KASPAROV – RÚSSIA, 1963-
+                </h3>
 
-            <h2>
-                Os Cinco Maiores Jogadores da História
-            </h2>
+                <div class="row my-3">
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                            <img 
+                                src="image/kasparov.jpg"
+                                alt="Garry Kasparov aparece na imagem. Homem branco com as mãos nas orelhas, expressão séria, esta usando terno e um relógio dourado na mão esquerda. A sua frente estão peças de xadrez organizadas para o início de uma partida e atrás dele projetam-se sombras de peças de xadrez."
+                                title="Garry Kasparov"
+                                class="img-fluid card-img-top"    
+                            >
+                            <div class="card-footer">
+                                <p class="mb-0">
+                                    <em>
+                                        Garry Kasparov.<br>
+                                        Fonte: <a href="https://www.rankings.com.br/melhores-jogadores-de-xadrez/" target="_blank">Rankings</a>
+                                    </em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-            <p>
-                <em>
-                    Fonte: <a href="https://www.rankings.com.br/melhores-jogadores-de-xadrez/">Rankings</a>
-                </em>
-            </p>
-
-            <h3>
-                5°- JOSÉ RAÚL CAPABLANCA – CUBA, 1888-1942
-            </h3>
-
-            <img src="image/capablanca.png"
-                alt="Homem em pé, olhando para a câmera. Usa um terno com gravata e colete. Expressão séria e cabelos penteados para trás. Está em um saguão amplo aonde encontram-se vários homens  de terno e vários tabuleiros de xadrez. A imagem está em tom sépia, indicando que é antiga"
-                title="José Raúl Capablanca">
-
-            <p>
-                <em>
-                    José Raul Capablanca. Fonte: <a href="https://www.rankings.com.br/melhores-jogadores-de-xadrez/"
-                        target="_blank">Rankings</a>
-                </em>
-            </p>
-
-            <p>
-                José Raúl Capablanca foi um jogador de xadrez cubano que foi campeão mundial de xadrez de 1921 a 1927.
-                Um dos maiores jogadores de todos os tempos, ele foi famoso por sua excepcional habilidade de fim de
-                jogo e velocidade para jogar.
-            </p>
-            <p>
-                Pelas suas realizações no mundo de xadrez, maestria sobre o tabuleiro e seu estilo de jogar
-                relativamente simples, ele foi apelidado de Máquina de Xadrez Humana.
-            </p>
-
-            <h3>
-                4°- BOBBY FISCHER – ESTADOS UNIDOS, 1943-2008
-            </h3>
-
-            <img src="image/fischer.jpg"
-                alt="Homem branco com expressão séria olha para a câmera. Cabelos levemente grisalhos está usando uma camisa branca e gravata azul. Ao fundo uma paisagem fora de foco do que aparentam ser árvores."
-                title="Bobby Fischer">
-
-
-            <p>
-                <em>
-                    Bobbby Fischer. Fonte: <a href="https://www.rankings.com.br/melhores-jogadores-de-xadrez/"
-                        target="_blank">Rankings</a>
-                </em>
-            </p>
-
-            <p>
-                Bobby foi um jogador americano e décimo primeiro Campeão Mundial. É amplamente considerado como um dos
-                melhores jogadores de xadrez de todos os tempos. Fischer foi também o autor do Xadrez best-selling.
-            </p>
-            <p>
-                Considerado uma lenda do xadrez, aos 13 anos, Fischer se tornou famoso por seu jogo, “O Jogo do Século”,
-                contra Donald Byrne em Nova York. Aos 15 anos de idade se tornou o mais novo GM e candidato para
-                Campeonato Mundial.
-            </p>
-
-            <h3>
-                3°- EMANUEL LASKER – ALEMANHA, 1868-1941
-            </h3>
-
-            <img src="image/lasker.jpg"
-                alt="duas imagens do mesmo homem. Em ambas aparece com o cabelo despenteado e bigode, usa um terno com gravata e colete. Ambas imagens estão em preto e branco. Na imagem da esquerda, o homem aparece olhando para a câmera com expressão séria. Na imagem da direita encontra-se fumando um charuto com as mãos unidas sobre uma possível mesa e olhando para baixo."
-                title="Emanuel Lasker">
-
-            <p>
-                <em>
-                    Emanuel Lasker. Fonte: <a href="https://www.rankings.com.br/melhores-jogadores-de-xadrez/"
-                        target="_blank">Rankings</a>
-                </em>
-            </p>
-
-            <p>
-                Emanuel foi um jogador alemão, matemático e filósofo que foi campeão mundial de xadrez por 27 anos. Em
-                seu primeiro, Lasker foi um dos campeões mais dominantes, e ainda é considerado um dos jogadores mais
-                fortes na história.
-            </p>
-            <p>
-                Seus contemporâneos afirmaram que Lasker usava jogo mental, e até se movia deliberadamente errado para
-                confundir os adversários. Uma recente análise, no entanto, indica que ele foi à frente do seu tempo e
-                usava uma abordagem mais flexível que seus contemporâneos. Ele publicou 5 livros e revistas de xadrez.
-            </p>
-
-            <h3>
-                2°- ANATOLY KARPOV – RÚSSIA, 1951-
-            </h3>
-
-            <img src="image/karpov.png"
-                alt="Homem idoso com expressão seria, encontra-se sentado de frente para a câmera. Usa um terno cinza de risca e uma camisa branca. Faz um movimento de jogo com a mão direita./ Ao fundo uma parede com papel de parede listrado em verde claro."
-                title="Anatoly Karpov">
-
-            <p>
-                <em>
-                    Anatoly Karpov. Fonte: <a href="https://www.rankings.com.br/melhores-jogadores-de-xadrez/"
-                        target="_blank">Rankings</a>
-                </em>
-            </p>
-
-            <p>
-                É um grande mestre de xadrez soviético/russo e ex-Campeão Mundial. Ele foi o oficial campeão mundial de
-                1975 a 1985 quando foi derrotado por Garry Kasparov.
-            </p>
-
-            <h3>
-                1°- GARRY KASPAROV – RÚSSIA, 1963-
-            </h3>
-
-            <img src="image/kasparov.jpg"
-                alt="Garry Kasparov aparece na imagem. Homem branco com as mãos nas orelhas, expressão séria, esta usando terno e um relógio dourado na mão esquerda. A sua frente estão peças de xadrez organizadas para o início de uma partida e atrás dele projetam-se sombras de peças de xadrez."
-                title="Garry Kasparov">
-
-            <p>
-                <em>
-                    Garry Kasparov. Fonte: <a href="https://www.rankings.com.br/melhores-jogadores-de-xadrez/"
-                        target="_blank">Rankings</a>
-                </em>
-            </p>
-
-            <p>
-                Nascido em Baku, Azerbaijão em 1963, Kasparov é um grande mestre de xadrez que se tornou o campeão
-                mundial em 1985 por derrotar Anatoli Karpov. Nenhum outro jogador dominou o xadrez por tanto tempo como
-                ele.
-            </p>
-            <p>
-                E é considerado por muitos como o melhor jogador na história do xadrez. Garry também aparece em nossa
-                lista das pessoas vivas mais inteligentes do mundo com um QI de 192 pontos.
-            </p>
-
-        </section>
-
+                    <div class="col-md-8">
+                        <p>
+                            Nascido em Baku, Azerbaijão em 1963, Kasparov é um grande mestre de xadrez que se tornou o campeão
+                            mundial em 1985 por derrotar Anatoli Karpov. Nenhum outro jogador dominou o xadrez por tanto tempo como
+                            ele.
+                        </p>
+                        <p>
+                            E é considerado por muitos como o melhor jogador na história do xadrez. Garry também aparece em nossa
+                            lista das pessoas vivas mais inteligentes do mundo com um QI de 192 pontos.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 
-    <footer>
-        <p>
-            <em>
-                Desenvolvido por: Adam Slabadack 
-                    <a href="https://github.com/arslabadack">
-                        <img src="image/github.png" alt="Logomarca do GitHub. Um gato misturado com polvo. A imagem é monocromática em cinza."
-                        title="arslabadack">
-                    </a>
-                    Eduardo Henrique de Oliveira
-                    <a href="https://github.com/Eduardo-H">
-                        <img src="image/github.png" alt="Logomarca do GitHub. Um gato misturado com polvo. A imagem é monocromática em cinza."
-                        title="Eduardo-H">
-                    </a>
-            </em>
-        </p>
+    <footer class="bg-dark text-white">
+        <div class="container-fluid">
+            <div class="row py-4 text-center">
+                <p>Xadrezando 2021</p>
+                <p class="mb-0">Desenvolvido por: 
+                    <a href="https://github.com/arslabadack">Adam Slabadack </a>, 
+                    <a href="https://github.com/Eduardo-H">Eduardo Henrique de Oliveira</a>
+                </p>
+            </div>
+        </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" 
+        crossorigin="anonymous"
+    ></script>
 </body>
 
 </html>
