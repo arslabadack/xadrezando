@@ -1,3 +1,4 @@
+/* General styling */
 body {
     padding: 0;
     box-sizing: border-box;
@@ -6,6 +7,10 @@ body {
     overflow-x: hidden;
 }
 
+a {
+    text-decoration: none;
+    transition: 0.2s;
+}
 
 .login-card img {
     border-top-left-radius: 4px;
@@ -16,6 +21,7 @@ body {
     text-align: justify;
 }
 
+/* Header styling */
 .overlay {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/image/chess_head.png");
     height: 100px;
@@ -32,10 +38,11 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: #fff;
     font-weight: 500;
 }
 
+/* Navbar styling */
 .navbar-brand-name {
     font-size: 16px;
 }
@@ -48,6 +55,7 @@ body {
     font-size: 14px;
 }
 
+/* Card styling */
 .card-footer {
     font-size: 14px;
 }
@@ -62,6 +70,7 @@ body {
     color: rgb(84, 86, 94);
 }
 
+/* Table styling */
 .table-link {
     text-decoration: none;
     color: #212529;
@@ -70,4 +79,48 @@ body {
 
 .table-link:hover {
     color: rgb(84, 86, 94);
+}
+
+/* Footer styling */
+footer {
+    color: #fff;
+    background-color: #212529;
+    display: flex;
+    align-items: center;
+    padding: 40px 40px;
+}
+
+.left-side-footer,
+.right-side-footer {
+    display: flex;
+}
+
+.left-side-footer {
+    float: left;
+}
+
+.right-side-footer {
+    float: right;
+}
+
+.footer-link {
+    color: #fff;
+    margin: 0 7px;
+}
+
+.footer-link:hover {
+    color: rgb(75, 137, 253);
+}
+
+/* Media queries */
+@media (max-width: 720px) {
+    .left-side-footer,
+    .right-side-footer {
+        display: block;
+        font-size: 0.85rem;
+    }
+
+    .footer-link {
+        margin: 0;
+    }
 }
