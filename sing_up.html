@@ -6,107 +6,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="image/horse_chess.ico" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" 
+        crossorigin="anonymous"
+    >
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
     <title>Cadastro</title>
-    <style>
-        header,
-        footer {
-            background-color: grey;
-            color: white;
-            padding: 10px;
-            text-transform: uppercase;
-            font-weight: bold;
-        }
-
-        fieldset {
-            border: 1px solid #ccc;
-            margin-top: 20px;
-            width: 350px;
-        }
-    </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Xadrezando - Xadrez Descomplicado</h1>
-    </header>
-
     <main>
-        <form action="index.html" method="get">
-            <fieldset>
-                <div style="margin-bottom: 10px;">
-                    <label for="email">Email</label><br />
-                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
-                </div>
+        <div class="container-fluid ">
+            <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-12 col-md-9">
+    
+                    <div class="card login-card border-0 shadow-lg my-5">
+                        <div class="card-body p-0">
+                            <div class="row">
+                                <div class="col-lg-6 d-none d-lg-block justify-content-center">
+                                    <img src="image/sing-up-image.jpg" class="img-fluid">
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="p-4">
+                                        <form action="index.html" method="get" class="mb-3">
+                                            <fieldset>
+                                                <div class="form-group">
+                                                    <label for="email">Email</label><br />
+                                                    <input type="email" name="email" id="email" class="form-control" placeholder="Digite seu e-mail">
+                                                </div>
+                                
+                                                <div class="form-group mt-2">
+                                                    <p class="mb-1">Sexo</p>
+                                                    <input type="radio" id="male" name="gender" value="male">
+                                                    <label for="male">Masculino</label><br>
+                                                    <input type="radio" id="female" name="gender" value="female">
+                                                    <label for="female">Feminino</label><br>
+                                                    <input type="radio" id="other" name="gender" value="other">
+                                                    <label for="other">Outro</label>
+                                                </div>
+                                                
+                                                <div class="form-group mt-2">
+                                                    <label for="password">Senha</label><br />
+                                                    <input type="password" name="password" id="password" class="form-control" placeholder="Digite sua senha">
+                                                </div>
+                                
+                                                <div class="form-group mt-2">
+                                                    <label for="password-confirmation">Confirme sua senha</label><br />
+                                                    <input type="password" name="password-confirmation" id="password-confirmation" class="form-control" placeholder="Digite sua senha novamente">
+                                                </div>
+                                
+                                                <div class="form-group mt-2">
+                                                    <label for="bio">Biografia</label><br />
+                                                    <textarea name="bio" id="bio" cols="30" class="form-control" rows="7" placeholder="Caso queria, escreva um resumo sobre você"></textarea>
+                                                </div>
+                                
+                                                <div class="form-group mt-2">
+                                                    <label for="favorite-mode">Modo favorito de jogo</label><br />
+                                                    <select class="form-control" name="favorite-mode" id="favorite-mode">
+                                                        <option value="Clássico">Clássico</option>
+                                                        <option value="Rápida">Rápida</option>
+                                                        <option value="Blitz">Blitz</option>
+                                                        <option value="Todos">Todos</option>
+                                                        <option value="Nenhum">Nenhum</option>
+                                                    </select>
+                                                </div>
+                                
+                                                <div class="form-group mt-3">
+                                                    <input type="checkbox" name="newsletter" id="newsletter">
+                                                    <label for="newsletter">Assisnar a newsletter</label>
+                                                </div>
+                                            </fieldset>
+                                
+                                            <fieldset class="d-flex justify-content-between mt-4">
+                                                <button class="btn btn-primary" type="submit">Cadastrar</button>
+                                                <button class="btn btn-warning" type="reset">Limpar</button>
+                                            </fieldset>
+                                        </form>
 
-                <div style="margin-bottom: 10px;">
-                    <p style="margin-bottom: 0;">Sexo</p>
-                    <input type="radio" id="male" name="gender" value="male">
-                    <label for="male">Masculino</label><br>
-                    <input type="radio" id="female" name="gender" value="female">
-                    <label for="female">Feminino</label><br>
-                    <input type="radio" id="other" name="gender" value="other">
-                    <label for="other">Outro</label>
+                                        <a href="login.html">Já tem uma conta? Acesse com ela!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
                 </div>
-                
-                <div style="margin-bottom: 10px;">
-                    <label for="password">Senha</label><br />
-                    <input type="password" name="password" id="password" placeholder="Digite sua senha">
-                </div>
+            </div>
+        </div>
 
-                <div style="margin-bottom: 10px;">
-                    <label for="password-confirmation">Confirme sua senha</label><br />
-                    <input type="password" name="password-confirmation" id="password-confirmation" placeholder="Digite sua senha novamente">
-                </div>
-
-                <div style="margin-bottom: 10px;">
-                    <label for="bio">Biografia</label><br />
-                    <textarea name="bio" id="bio" cols="30" rows="7" placeholder="Caso queria, escreva um resumo sobre você"></textarea>
-                </div>
-
-                <div style="margin-bottom: 10px;">
-                    <label for="favorite-mode">Modo favorito de jogo</label><br />
-                    <select name="favorite-mode" id="favorite-mode">
-                        <option value="Clássico">Clássico</option>
-                        <option value="Rápida">Rápida</option>
-                        <option value="Blitz">Blitz</option>
-                        <option value="Todos">Todos</option>
-                        <option value="Nenhum">Nenhum</option>
-                    </select>
-                </div>
-
-                <div>
-                    <input type="checkbox" name="newsletter" id="newsletter">
-                    <label for="newsletter">Assisnar a newsletter</label>
-                </div>
-            </fieldset>
-
-            <fieldset>
-                <button type="submit">Cadastrar</button>
-                <button type="reset">Limpar</button>
-            </fieldset>
-        </form>
-
-        <a href="login.html">Já tem uma conta? Acesse com ela!</a>
+        
     </main>
-
-    <footer>
-        <p>
-            <em>
-                Desenvolvido por: Adam Slabadack 
-                    <a href="https://github.com/arslabadack">
-                        <img src="image/github.png" alt="Logomarca do GitHub. Um gato misturado com polvo. A imagem é monocromática em cinza."
-                        title="arslabadack">
-                    </a>
-                    Eduardo Henrique de Oliveira
-                    <a href="https://github.com/Eduardo-H">
-                        <img src="image/github.png" alt="Logomarca do GitHub. Um gato misturado com polvo. A imagem é monocromática em cinza."
-                        title="Eduardo-H">
-                    </a>
-            </em>
-        </p>
-    </footer>
-
 </body>
 
 </html>
