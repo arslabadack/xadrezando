@@ -5,323 +5,373 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="image/horse_chess.ico" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" 
+        crossorigin="anonymous"
+    >
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
     <title>Campeonato Mundial</title>
-    <style>
-        header,
-        footer {
-            background-color: grey;
-            color: white;
-            padding: 10px;
-            text-transform: uppercase;
-            font-weight: bold;
-        }
-    </style>
-
-    <style>
-        table,
-        th,
-        td {
-            border: solid 1px black;
-            border-collapse: collapse;
-            padding: 10px;
-        }
-
-        th {
-            text-align: center;
-        }
-
-        td {
-            text-align: left;
-        }
-
-        p {
-            max-width: 600px;
-        }
-
-        tbody#destaque:hover,
-        tr:hover {
-            background-color: #ccc;
-        }
-    </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Xadrezando - Xadrez Descomplicado</h1>
-    </header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            
+            <a class="navbar-brand" href="index.html">
+                <img src="image/horse_chess.ico" class="navbar-img" alt="Imagem de uma peça de xadrez">
+                <span class="navbar-brand-name">Xadrezando</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="history.html" class="nav-link">História do Xadrez</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="rules.html" class="nav-link">Regras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="players.html" class="nav-link">Lendas do Xadrez</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="ranking.html" class="nav-link">Ranking Atual</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="matches.html" class="nav-link">Partidas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="curiosities.html" class="nav-link">Curiosidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="championship.html" class="nav-link active">Campeonato Mundial</a>
+                    </li>
+
+                    <!-- Navbar divider (Small screen only) -->
+                    <hr>
+
+                    <li class="nav-item float-right">
+                        <a href="login.html" class="btn btn-sm btn-primary">Login</a>
+                    </li>
+                    <li class="nav-item float-right">
+                        <a href="sing_up.html" class="nav-link">Cadastre-se</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-3">
+        <header>
+            <div class="overlay">
+                <div class="header-text">
+                    <p class="mb-0">Xadrezando - Xadrez descomplicado</p>
+                </div>
+            </div>
+        </header>
+    </div>
 
     <main>
+        <div class="container py-4">
+            <section>
 
-        <section>
+                <h2>Campeonato Mundial de Xadrez</h2>
+    
+                <div class="row">
+                    <div class="col-md-8">
+                        <p>
+                            O primeiro campeonato mundial ocorreu em 1886, quando os dois principais enxadristas da época, Wilhelm
+                            Steinitz e Johannes Zukertort, enfrentaram-se. De 1886 a 1946, o campeonato não era organizado por uma
+                            entidade, o próprio campeão escolhia o adversário e organizava o desafio. De 1948 a 1993, a organização
+                            do campeonato foi feita pela FIDE, a Federação Internacional de xadrez.
+                        </p>
+            
+                        <p>
+                            Em 1993, o então campeão Garry
+                            Kasparov rompeu com a FIDE e criou a PCA, dando início a um campeonato paralelo. Esta situação durou até
+                            2006, quando o título foi reunificado. Ainda em 2006, as duas entidades de xadrez foram unificadas.
+                        </p>
 
-            <h2>Campeonato Mundial de Xadrez</h2>
+                        <p>
+                            Para saber quem seria o novo campeão, a FIDE promoveu um match entre o campeão da FIDE (Veselin Topalov)
+                            e o
+                            da PCA (Vladimir Kramnik), com Kramnik sagrando-se campeão. No ano de 2007, Viswanathan Anand venceu
+                            Kramnik.
+                        </p>
 
-            <p>
-                <a href="index.html">Página Inicial</a>
-            </p>
+                        <p>
+                            Em novembro de 2013, Anand perdeu o título para o jovem Norueguês Magnus Carlsen, na época, o
+                            primeiro do ranking, com um rating Elo de 2870.
+                        </p>
+                    </div>
 
-            <p>
-                O primeiro campeonato mundial ocorreu em 1886, quando os dois principais enxadristas da época, Wilhelm
-                Steinitz e Johannes Zukertort, enfrentaram-se. De 1886 a 1946, o campeonato não era organizado por uma
-                entidade, o próprio campeão escolhia o adversário e organizava o desafio. De 1948 a 1993, a organização
-                do campeonato foi feita pela FIDE, a Federação Internacional de xadrez.
-            </p>
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                            <img src="image/kasparov2.jpg"
+                                alt="Garry Kasparov, homem com cabelo curto, esta usando um blazer azul escuro e uma camisa azul clara. Com a mão direita faz um movimento em um tabuleiro de xadrez que aparece em sua frente deixando a mostra algumas peças. Sua mão esquerda se encontra apoiada na mesa e nesta há um relógio de ouro.Ao fundo, na parede, há um mapa mundi"
+                                title="Garry Kasparov"
+                                class="img-fluid card-img-top"    
+                            >
+                            <div class="card-footer">
+                                <p class="mb-0">
+                                    <em>
+                                        Garry Kasparov.<br>Fonte: 
+                                        <a href="https://www.epochtimes.com.br/garry-kasparov-rei-do-xadrez-combate-ditaduras-em-todo-mundo/">
+                                            EPOCH TIMES
+                                        </a>
+                                    </em>
+                                </p>
+                            </div>
+                        </div>
 
-            <p>
-                Em 1993, o então campeão Garry
-                Kasparov rompeu com a FIDE e criou a PCA, dando início a um campeonato paralelo. Esta situação durou até
-                2006, quando o título foi reunificado. Ainda em 2006, as duas entidades de xadrez foram unificadas.
-            </p>
-
-            <img src="image/kasparov2.jpg"
-                alt="Garry Kasparov, homem com cabelo curto, esta usando um blazer azul escuro e uma camisa azul clara. Com a mão direita faz um movimento em um tabuleiro de xadrez que aparece em sua frente deixando a mostra algumas peças. Sua mão esquerda se encontra apoiada na mesa e nesta há um relógio de ouro.Ao fundo, na parede, há um mapa mundi"
-                title="Garry Kasparov">
-
-            <p>
-                <em>
-                    Garry Kasparov. Fonte: <a
-                        href="https://www.epochtimes.com.br/garry-kasparov-rei-do-xadrez-combate-ditaduras-em-todo-mundo/">EPOCH
-                        TIMES</a>
-                </em>
-            </p>
-
-            <p>
-                Para saber quem seria o novo campeão, a FIDE promoveu um match entre o campeão da FIDE (Veselin Topalov)
-                e o
-                da PCA (Vladimir Kramnik), com Kramnik sagrando-se campeão. No ano de 2007, Viswanathan Anand venceu
-                Kramnik.
-
-            </p>
-
-            <img src="image/carlsen.jpg"
-                alt="Magnus Carlsen aparece na foto. Jovem, branco, com barba média e cabelos penteados para trás. Usa um blazer azul e uma camisa branca. Magnus está segurando uma peça de xadrez, o rei e na mesa há várias peças de xadrez em um jogo já iniciado."
-                title="Magnus Carlsen">
-
-            <p>
-                <em>
-                    Magnus Carlsen. Fonte: <a
-                        href="https://www.theguardian.com/sport/2020/jan/09/magnus-carlsen-i-will-always-be-proud-no1-fantasy-football-chess">The
-                        Guardian</a>
-                </em>
-            </p>
-
-            <p>
-                Em novembro de 2013, Anand perdeu o título para o jovem Norueguês Magnus Carlsen, na época, o
-                primeiro do ranking, com um rating Elo de 2870.
-            </p>
-
-        </section>
-
-        <section>
-
-            <h2>Campeões mundiais (1886 - atualidade)</h2>
-
-            <table>
-
-                <tr>
-                    <th>Período</th>
-                    <th>País</th>
-                    <th>Enxadrista</th>
-                </tr>
-
-                <tr>
-                    <td>1886 - 1893</td>
-                    <td><img src="image/aushun.webp" alt="Bandeira do império Austro-Húngaro"
-                            title="Império Austro-Húngaro"></td>
-                    <td><a href="https://pt.wikipedia.org/wiki/Wilhelm_Steinitz">Wilhelm Steinitz</a></td>
-                </tr>
-
-                <tr>
-                    <td>1894 - 1920</td>
-                    <td><img src="image/ale.webp" alt="Bandeira do Império Alemão" title="Alemanha"></td>
-                    <td><a href="https://pt.wikipedia.org/wiki/Emanuel_Lasker">Emanuel Lasker</a></td>
-                </tr>
-
-                <tr>
-                    <td>1921 - 1926</td>
-                    <td><img src="image/cub.webp" alt="Bandeira de Cuba" title="Cuba"></td>
-                    <td><a href="https://pt.wikipedia.org/wiki/Jos%C3%A9_Ra%C3%BAl_Capablanca">José Raúl Capablanca</a>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>1927 - 1934</td>
-                    <td><img src="image/fra2.webp" alt="Bandeira da França" title="França"></td>
-                    <td><a href="https://pt.wikipedia.org/wiki/Alexander_Alekhine">Alexander Alekhine</a></td>
-                </tr>
-
-                <tr>
-                    <td>1935 - 1936</td>
-                    <td><img src="image/ned.webp" alt="Bandeira dos Países Baixos" title="Países Baixos"></td>
-                    <td><a href="https://pt.wikipedia.org/wiki/Max_Euwe">Max Euwe</a></td>
-                </tr>
-
-                <tr>
-                    <td>1937 - 1946</td>
-                    <td><img src="image/urss.webp" alt="Bandeira da União Soviética" title="URSS"></td>
-                    <td><a href="https://pt.wikipedia.org/wiki/Alexander_Alekhine">Alexander Alekhine</a></td>
-                </tr>
-
-                <tr>
-                    <td>1948 - 1956</td>
-                    <td><img src="image/urss.webp" alt="Bandeira da União Soviética" title="URSS"></td>
-                    <td><a href="https://pt.wikipedia.org/wiki/Mikhail_Botvinnik">Mikhail Botvinnik</a></td>
-                </tr>
-
-                <tr>
-                    <td>1957 - 1958</td>
-                    <td><img src="image/urss.webp" alt="Bandeira da União Soviética" title="URSS"></td>
-                    <td><a href="https://pt.wikipedia.org/wiki/Vasily_Smyslov">Vasily Smyslov</a></td>
-                </tr>
-
-                <tr>
-                    <td>1958 - 1959</td>
-                    <td><img src="image/urss.webp" alt="Bandeira da União Soviética" title="URSS"></td>
-                    <td><a href="https://pt.wikipedia.org/wiki/Mikhail_Botvinnik">Mikhail Botvinnik</a></td>
-                </tr>
-
-                <tr>
-                    <td>1960 - 1961</td>
-                    <td><img src="image/urss.webp" alt="Bandeira da União Soviética" title="URSS"></td>
-                    <td><a href="https://pt.wikipedia.org/wiki/Mikhail_Tal">Mikhail Tal</a></td>
-                </tr>
-
-                <tr>
-                    <td>1961 - 1962</td>
-                    <td><img src="image/urss.webp" alt="Bandeira da União Soviética" title="URSS"></td>
-                    <td><a href="https://pt.wikipedia.org/wiki/Mikhail_Botvinnik">Mikhail Botvinnik</a></td>
-                </tr>
-
-                <tr>
-                    <td>1963 - 1968</td>
-                    <td><img src="image/urss.webp" alt="Bandeira da União Soviética" title="URSS"></td>
-                    <td><a href="https://pt.wikipedia.org/wiki/Tigran_Petrosian">Tigran Petrosian</a></td>
-                </tr>
-
-                <tr>
-                    <td>1969 - 1971</td>
-                    <td><img src="image/urss.webp" alt="Bandeira da União Soviética" title="URSS"></td>
-                    <td><a href="https://pt.wikipedia.org/wiki/Boris_Spassky">Boris Spassky</a></td>
-                </tr>
-
-                <tr>
-                    <td>1972 - 1974</td>
-                    <td><img src="image/usa2.webp" alt="Bandeira dos Estados Unidos" title="Estados Unidos"></td>
-                    <td><a href="https://pt.wikipedia.org/wiki/Bobby_Fischer">Bobby Fischer</a></td>
-                </tr>
-
-                <tr>
-                    <td>1975 - 1984</td>
-                    <td><img src="image/urss.webp" alt="Bandeira da União Soviética" title="URSS"></td>
-                    <td><a href="https://pt.wikipedia.org/wiki/Anatoly_Karpov">Anatoly Karpov</a></td>
-                </tr>
-
-                <tr>
-                    <td>1985 - 1992</td>
-                    <td><img src="image/urss.webp" alt="Bandeira da União Soviética" title="URSS"></td>
-                    <td><a href="https://pt.wikipedia.org/wiki/Garry_Kasparov">Garry Kasparov</a></td>
-                </tr>
-
-                <tr>
-                    <td>1993 - 1998</td>
-                    <td><img src="image/rus2.webp" alt="Bandeira da Rússia" title="Rússia"></td>
-                    <td><a href="https://pt.wikipedia.org/wiki/Anatoly_Karpov">Anatoly Karpov</a></td>
-                </tr>
-
-                <tr>
-                    <td>1999 - 2000</td>
-                    <td><img src="image/rus2.webp" alt="Bandeira da Rússia" title="Rússia"></td>
-                    <td><a href="https://pt.wikipedia.org/wiki/Alexander_Khalifman">Alexander Khalifman</a></td>
-                </tr>
-
-                <tr>
-                    <td>2000 - 2001</td>
-                    <td><img src="image/ind.webp" alt="Bandeira da Índia" title="Índia"></td>
-                    <td><a href="https://pt.wikipedia.org/wiki/Viswanathan_Anand">Viswanathan Anand</a></td>
-                </tr>
-
-                <tr>
-                    <td>2002 - 2003</td>
-                    <td><img src="image/ucr.webp" alt="Bandeira da Ucrânia" title="Ucrânia"></td>
-                    <td><a href="https://pt.wikipedia.org/wiki/Ruslan_Ponomariov">Ruslan Ponomariov</a></td>
-                </tr>
-
-                <tr>
-                    <td>2004 - 2005</td>
-                    <td><img src="image/uzb.webp" alt="Bandeira do Uzbequistão" title="Uzbequistão"></td>
-                    <td><a href="https://pt.wikipedia.org/wiki/Rustam_Qosimjonov">Rustam Qosimjonov</a></td>
-                </tr>
-
-                <tr>
-                    <td>2005 - 2006</td>
-                    <td><img src="image/bul.webp" alt="Bandeira da Bulgária" title="Bulgária"></td>
-                    <td><a href="https://pt.wikipedia.org/wiki/Veselin_Topalov">Veselin Topalov</a></td>
-                </tr>
-
-                <tr>
-                    <td>1993 - 2000</td>
-                    <td><img src="image/rus2.webp" alt="Bandeira da Rússia" title="Rússia"></td>
-                    <td><a href="https://pt.wikipedia.org/wiki/Garry_Kasparov">Garry Kasparov (campeão mundial PCA)</a>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>2000 - 2006</td>
-                    <td><img src="image/rus2.webp" alt="Bandeira da Rússia" title="Rússia"></td>
-                    <td><a href="https://pt.wikipedia.org/wiki/Vladimir_Kramnik">Vladimir Kramnik (campeão mundial
-                            PCA)</a></td>
-                </tr>
-
-                <tr>
-                    <td>2006 - 2007</td>
-                    <td><img src="image/rus2.webp" alt="Bandeira da Rússia" title="Rússia"></td>
-                    <td><a href="https://pt.wikipedia.org/wiki/Vladimir_Kramnik">Vladimir Kramnik</a></td>
-                </tr>
-
-                <tr>
-                    <td>2007 - 2013</td>
-                    <td><img src="image/ind.webp" alt="Bandeira da Índia" title="Índia"></td>
-                    <td><a href="https://pt.wikipedia.org/wiki/Viswanathan_Anand">Viswanathan Anand</a></td>
-                </tr>
-
-                <tr>
-                    <td>2013 - atualidade</td>
-                    <td><img src="image/nw2.webp" alt="Bandeira da Noruega" title="Noruega"></td>
-                    <td><a href="https://pt.wikipedia.org/wiki/Magnus_Carlsen">Magnus Carlsen</a></td>
-                </tr>
-
-            </table>
-
-            <p>
-                <em>
-                    Fonte: <a href="https://pt.wikipedia.org/wiki/Campeonato_Mundial_de_Xadrez">Wikipédia</a>
-                </em>
-            </p>
-
-        </section>
-
+                        <div class="card mb-3">
+                            <img src="image/carlsen.jpg"
+                                alt="Magnus Carlsen aparece na foto. Jovem, branco, com barba média e cabelos penteados para trás. Usa um blazer azul e uma camisa branca. Magnus está segurando uma peça de xadrez, o rei e na mesa há várias peças de xadrez em um jogo já iniciado."
+                                title="Magnus Carlsen"
+                                class="img-fluid card-img-top"    
+                            >
+                            <div class="card-footer">
+                                <p class="mb-0">
+                                    <em>
+                                        Magnus Carlsen. <br>Fonte: 
+                                        <a
+                                            href="https://www.theguardian.com/sport/2020/jan/09/magnus-carlsen-i-will-always-be-proud-no1-fantasy-football-chess">
+                                            The Guardian
+                                        </a>
+                                    </em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </section>
+    
+            <section>
+    
+                <h2>Campeões mundiais (1886 - atualidade)</h2>
+    
+                <table class="table table-striped table-hover">
+    
+                    <thead class="table-dark">
+                        <tr>
+                            <th>PERÍODO</th>
+                            <th>PAÍS</th>
+                            <th>ENXADRISTA</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr>
+                            <td>1886 - 1893</td>
+                            <td><img src="image/aushun.webp" alt="Bandeira do império Austro-Húngaro"
+                                    title="Império Austro-Húngaro"></td>
+                            <td><a href="https://pt.wikipedia.org/wiki/Wilhelm_Steinitz">Wilhelm Steinitz</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>1894 - 1920</td>
+                            <td><img src="image/ale.webp" alt="Bandeira do Império Alemão" title="Alemanha"></td>
+                            <td><a href="https://pt.wikipedia.org/wiki/Emanuel_Lasker">Emanuel Lasker</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>1921 - 1926</td>
+                            <td><img src="image/cub.webp" alt="Bandeira de Cuba" title="Cuba"></td>
+                            <td><a href="https://pt.wikipedia.org/wiki/Jos%C3%A9_Ra%C3%BAl_Capablanca">José Raúl Capablanca</a>
+                            </td>
+                        </tr>
+        
+                        <tr>
+                            <td>1927 - 1934</td>
+                            <td><img src="image/fra2.webp" alt="Bandeira da França" title="França"></td>
+                            <td><a href="https://pt.wikipedia.org/wiki/Alexander_Alekhine">Alexander Alekhine</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>1935 - 1936</td>
+                            <td><img src="image/ned.webp" alt="Bandeira dos Países Baixos" title="Países Baixos"></td>
+                            <td><a href="https://pt.wikipedia.org/wiki/Max_Euwe">Max Euwe</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>1937 - 1946</td>
+                            <td><img src="image/urss.webp" alt="Bandeira da União Soviética" title="URSS"></td>
+                            <td><a href="https://pt.wikipedia.org/wiki/Alexander_Alekhine">Alexander Alekhine</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>1948 - 1956</td>
+                            <td><img src="image/urss.webp" alt="Bandeira da União Soviética" title="URSS"></td>
+                            <td><a href="https://pt.wikipedia.org/wiki/Mikhail_Botvinnik">Mikhail Botvinnik</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>1957 - 1958</td>
+                            <td><img src="image/urss.webp" alt="Bandeira da União Soviética" title="URSS"></td>
+                            <td><a href="https://pt.wikipedia.org/wiki/Vasily_Smyslov">Vasily Smyslov</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>1958 - 1959</td>
+                            <td><img src="image/urss.webp" alt="Bandeira da União Soviética" title="URSS"></td>
+                            <td><a href="https://pt.wikipedia.org/wiki/Mikhail_Botvinnik">Mikhail Botvinnik</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>1960 - 1961</td>
+                            <td><img src="image/urss.webp" alt="Bandeira da União Soviética" title="URSS"></td>
+                            <td><a href="https://pt.wikipedia.org/wiki/Mikhail_Tal">Mikhail Tal</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>1961 - 1962</td>
+                            <td><img src="image/urss.webp" alt="Bandeira da União Soviética" title="URSS"></td>
+                            <td><a href="https://pt.wikipedia.org/wiki/Mikhail_Botvinnik">Mikhail Botvinnik</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>1963 - 1968</td>
+                            <td><img src="image/urss.webp" alt="Bandeira da União Soviética" title="URSS"></td>
+                            <td><a href="https://pt.wikipedia.org/wiki/Tigran_Petrosian">Tigran Petrosian</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>1969 - 1971</td>
+                            <td><img src="image/urss.webp" alt="Bandeira da União Soviética" title="URSS"></td>
+                            <td><a href="https://pt.wikipedia.org/wiki/Boris_Spassky">Boris Spassky</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>1972 - 1974</td>
+                            <td><img src="image/usa2.webp" alt="Bandeira dos Estados Unidos" title="Estados Unidos"></td>
+                            <td><a href="https://pt.wikipedia.org/wiki/Bobby_Fischer">Bobby Fischer</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>1975 - 1984</td>
+                            <td><img src="image/urss.webp" alt="Bandeira da União Soviética" title="URSS"></td>
+                            <td><a href="https://pt.wikipedia.org/wiki/Anatoly_Karpov">Anatoly Karpov</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>1985 - 1992</td>
+                            <td><img src="image/urss.webp" alt="Bandeira da União Soviética" title="URSS"></td>
+                            <td><a href="https://pt.wikipedia.org/wiki/Garry_Kasparov">Garry Kasparov</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>1993 - 1998</td>
+                            <td><img src="image/rus2.webp" alt="Bandeira da Rússia" title="Rússia"></td>
+                            <td><a href="https://pt.wikipedia.org/wiki/Anatoly_Karpov">Anatoly Karpov</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>1999 - 2000</td>
+                            <td><img src="image/rus2.webp" alt="Bandeira da Rússia" title="Rússia"></td>
+                            <td><a href="https://pt.wikipedia.org/wiki/Alexander_Khalifman">Alexander Khalifman</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>2000 - 2001</td>
+                            <td><img src="image/ind.webp" alt="Bandeira da Índia" title="Índia"></td>
+                            <td><a href="https://pt.wikipedia.org/wiki/Viswanathan_Anand">Viswanathan Anand</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>2002 - 2003</td>
+                            <td><img src="image/ucr.webp" alt="Bandeira da Ucrânia" title="Ucrânia"></td>
+                            <td><a href="https://pt.wikipedia.org/wiki/Ruslan_Ponomariov">Ruslan Ponomariov</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>2004 - 2005</td>
+                            <td><img src="image/uzb.webp" alt="Bandeira do Uzbequistão" title="Uzbequistão"></td>
+                            <td><a href="https://pt.wikipedia.org/wiki/Rustam_Qosimjonov">Rustam Qosimjonov</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>2005 - 2006</td>
+                            <td><img src="image/bul.webp" alt="Bandeira da Bulgária" title="Bulgária"></td>
+                            <td><a href="https://pt.wikipedia.org/wiki/Veselin_Topalov">Veselin Topalov</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>1993 - 2000</td>
+                            <td><img src="image/rus2.webp" alt="Bandeira da Rússia" title="Rússia"></td>
+                            <td><a href="https://pt.wikipedia.org/wiki/Garry_Kasparov">Garry Kasparov (campeão mundial PCA)</a>
+                            </td>
+                        </tr>
+        
+                        <tr>
+                            <td>2000 - 2006</td>
+                            <td><img src="image/rus2.webp" alt="Bandeira da Rússia" title="Rússia"></td>
+                            <td><a href="https://pt.wikipedia.org/wiki/Vladimir_Kramnik">Vladimir Kramnik (campeão mundial
+                                    PCA)</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>2006 - 2007</td>
+                            <td><img src="image/rus2.webp" alt="Bandeira da Rússia" title="Rússia"></td>
+                            <td><a href="https://pt.wikipedia.org/wiki/Vladimir_Kramnik">Vladimir Kramnik</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>2007 - 2013</td>
+                            <td><img src="image/ind.webp" alt="Bandeira da Índia" title="Índia"></td>
+                            <td><a href="https://pt.wikipedia.org/wiki/Viswanathan_Anand">Viswanathan Anand</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>2013 - atualidade</td>
+                            <td><img src="image/nw2.webp" alt="Bandeira da Noruega" title="Noruega"></td>
+                            <td><a href="https://pt.wikipedia.org/wiki/Magnus_Carlsen">Magnus Carlsen</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+    
+                <p>
+                    <em>
+                        Fonte: <a href="https://pt.wikipedia.org/wiki/Campeonato_Mundial_de_Xadrez">Wikipédia</a>
+                    </em>
+                </p>
+    
+            </section>
+        </div>
     </main>
 
     <br>
 
-    <footer>
-        <p>
-            <em>
-                Desenvolvido por: Adam Slabadack 
-                    <a href="https://github.com/arslabadack">
-                        <img src="image/github.png" alt="Logomarca do GitHub. Um gato misturado com polvo. A imagem é monocromática em cinza."
-                        title="arslabadack">
-                    </a>
-                    Eduardo Henrique de Oliveira
-                    <a href="https://github.com/Eduardo-H">
-                        <img src="image/github.png" alt="Logomarca do GitHub. Um gato misturado com polvo. A imagem é monocromática em cinza."
-                        title="Eduardo-H">
-                    </a>
-            </em>
-        </p>
+    <footer class="bg-dark text-white">
+        <div class="container-fluid">
+            <div class="row py-4 text-center">
+                <p>Xadrezando 2021</p>
+                <p class="mb-0">Desenvolvido por: 
+                    <a href="https://github.com/arslabadack">Adam Slabadack </a>, 
+                    <a href="https://github.com/Eduardo-H">Eduardo Henrique de Oliveira</a>
+                </p>
+            </div>
+        </div>
     </footer>
 
+    <!-- Bootstrap JS -->
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" 
+        crossorigin="anonymous"
+    ></script>
 </body>
 
 </html>
