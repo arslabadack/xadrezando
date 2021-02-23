@@ -1,12 +1,12 @@
+# Etapa 1
+
 > Todas as páginas do site devem ser validado em validator.w3.org sem nenhum erro ou warning. O site deve ter, no mínimo, 8 páginas com **quantidade considerável de conteúdo relevante** sobre o tema escolhido em cada uma delas. (2 pontos)
 
 - ~~8 páginas.~~
 
-
-
 > Utilizar corretamente todas as meta tags apresentadas e ícone do site (ícone em todas as páginas). (1 ponto)
 
-- Meta tags;
+- ~~Meta tags~~;
 - ~~Ícone do site.~~
 
 > Utilizar corretamente as tags de formatação (negrito, itálico, marcado, sobrescrito, etc). (1 ponto)
@@ -39,10 +39,42 @@
 
 > Utilizar corretamente, pelo menos, 1 formulário no site. O formulário deve ter, no mínimo, os atributos action, method e os elementos inputs (text,- radio, select) textarea e botões submit e reset. (1 ponto)
 
+# Etapa 2
 
+> Os estilos devem estar em um, ou mais arquivos de CSS externos
+- ~~style.css~~ 
 
+> Usar cores e background corretamente
+- ~~Cores~~
+- ~~Background~~
 
+> Usar border, margin e padding corretamente
+- ~~Border~~
+- ~~Margin~~
+- ~~Padding~~
 
-https://super.abril.com.br/cultura/o-que-e-o-gambito-da-rainha-entenda-o-lance-de-xadrez-que-batiza-a-serie/
+> Usar text e web fonts corretamente
+- ~~Text~~
+- ~~Web fonts~~
 
- 
+> Usar links customizados corretamente
+- ~~Link customizado no footer~~
+
+> Usar table com efeito zebra corretamente
+- ~~Tabelas com efeto de zebra (2 no total)~~
+
+> Usar position, overflow, float corretamente
+- ~~Position~~
+- ~~Overflow~~
+- ~~Float~~
+
+> Usar header e footer customizado corretamente, em todo o site
+- ~~Header~~
+- ~~Footer~~
+- #### * Ambos não aparecem na tela de login e cadastro de usuário (pois não faz sentido pra aplicação)
+
+> Usar menu customizado corretamente, em todo o site
+- ~~Navbar customizada~~
+
+> Validar todos os arquivos de CSS em http://www.css-validator.org ou https://jigsaw.w3.org/css-validator/
+- ~~Validação~~
