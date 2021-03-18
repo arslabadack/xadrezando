@@ -342,12 +342,26 @@
                     </tbody>
                 </table>
     
-                <p>
-                    <em>
-                        Fonte: <a href="https://pt.wikipedia.org/wiki/Campeonato_Mundial_de_Xadrez">Wikipédia</a>
-                    </em>
-                </p>
+                <div class="d-flex justify-content-between">
+                    <p>
+                        <em>
+                            Fonte: <a href="https://pt.wikipedia.org/wiki/Campeonato_Mundial_de_Xadrez">Wikipédia</a>
+                        </em>
+                    </p>
     
+                    <button 
+                        type="button" 
+                        id="download-btn"
+                        class="btn btn-sm btn-primary"
+                        data-bs-trigger="hover focus"
+                        data-bs-toggle="popover"
+                        title="Download the data" 
+                        data-bs-content="Get all the content of this table in .JSON format to use how you want"
+                    >
+                        Download data
+                    </button>
+                </div>
+
             </section>
         </div>
     </main>
@@ -373,6 +387,17 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" 
         crossorigin="anonymous"
     ></script>
+
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        });
+
+        var popover = new bootstrap.Popover(document.querySelector('#download-btn'), {
+            container: 'body'
+        });
+    </script>
 </body>
 
 </html>
