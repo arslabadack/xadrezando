@@ -35,47 +35,77 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="p-4">
-                                        <form action="index.html" method="get" class="mb-3">
+                                        <form action="index.html" method="get" class="mb-3 needs-validation" novalidate>
                                             <fieldset>
                                                 <div class="form-group">
                                                     <label for="email">Email</label><br />
-                                                    <input type="email" name="email" id="email" class="form-control" placeholder="Digite seu e-mail">
+                                                    <input type="email" name="email" id="email" class="form-control" placeholder="Digite seu e-mail" required>
+                                                    <div class="valid-feedback">
+                                                        OK!
+                                                    </div>
+                                                    <div class="invalid-feedback">
+                                                        Informe seu e-mail
+                                                    </div>
                                                 </div>
                                 
                                                 <div class="form-group mt-2">
                                                     <p class="mb-1">Sexo</p>
-                                                    <input type="radio" id="male" name="gender" value="male">
+                                                    <input type="radio" id="male" name="gender" value="male" required>
                                                     <label for="male">Masculino</label><br>
-                                                    <input type="radio" id="female" name="gender" value="female">
+                                                    <input type="radio" id="female" name="gender" value="female" required>
                                                     <label for="female">Feminino</label><br>
-                                                    <input type="radio" id="other" name="gender" value="other">
+                                                    <input type="radio" id="other" name="gender" value="other" required>
                                                     <label for="other">Outro</label>
+                                                    <div class="valid-feedback">
+                                                        OK!
+                                                    </div>
+                                                    <div class="invalid-feedback">
+                                                        Escolha uma das opções
+                                                    </div>
                                                 </div>
                                                 
                                                 <div class="form-group mt-2">
                                                     <label for="password">Senha</label><br />
-                                                    <input type="password" name="password" id="password" class="form-control" placeholder="Digite sua senha">
+                                                    <input type="password" name="password" id="password" class="form-control" placeholder="Digite sua senha" required>
+                                                    <div class="valid-feedback">
+                                                        Ok!
+                                                    </div>
+                                                    <div class="invalid-feedback">
+                                                        Escolha uma senha
+                                                    </div>
                                                 </div>
                                 
                                                 <div class="form-group mt-2">
                                                     <label for="password-confirmation">Confirme sua senha</label><br />
-                                                    <input type="password" name="password-confirmation" id="password-confirmation" class="form-control" placeholder="Digite sua senha novamente">
+                                                    <input type="password" name="password-confirmation" id="password-confirmation" class="form-control" placeholder="Digite sua senha novamente" required>
+                                                    <div class="valid-feedback">
+                                                        Ok!
+                                                    </div>
+                                                    <div class="invalid-feedback">
+                                                        Confirme sua senha
+                                                    </div>
                                                 </div>
                                 
                                                 <div class="form-group mt-2">
                                                     <label for="bio">Biografia</label><br />
                                                     <textarea name="bio" id="bio" cols="30" class="form-control" rows="7" placeholder="Caso queria, escreva um resumo sobre você"></textarea>
+                                                    <div class="valid-feedback">
+                                                        OK!
+                                                    </div>
                                                 </div>
                                 
                                                 <div class="form-group mt-2">
                                                     <label for="favorite-mode">Modo favorito de jogo</label><br />
-                                                    <select class="form-control" name="favorite-mode" id="favorite-mode">
+                                                    <select class="form-control" name="favorite-mode" id="favorite-mode" required>
                                                         <option value="Clássico">Clássico</option>
                                                         <option value="Rápida">Rápida</option>
                                                         <option value="Blitz">Blitz</option>
                                                         <option value="Todos">Todos</option>
                                                         <option value="Nenhum">Nenhum</option>
                                                     </select>
+                                                    <div class="valid-feedback">
+                                                        OK!
+                                                    </div>
                                                 </div>
                                 
                                                 <div class="form-group mt-3">
@@ -100,9 +130,27 @@
                 </div>
             </div>
         </div>
-
-        
     </main>
+    
+    <script>
+        (function () {
+            'use strict'
+
+            var forms = document.querySelectorAll('.needs-validation')
+
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
 </body>
 
 </html>
