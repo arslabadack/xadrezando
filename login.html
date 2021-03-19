@@ -15,6 +15,8 @@
         rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" 
         crossorigin="anonymous"
     >
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/7b665cb419.js" crossorigin="anonymous"></script>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
     <title>Login</title>
@@ -41,7 +43,11 @@
                                             <fieldset>
                                                 <div class="form-group mb-2">
                                                     <label for="email">Email</label>
-                                                    <input type="email" name="email" id="email" class="form-control" placeholder="Digite seu e-mail" required>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                                        <input type="email" name="email" id="email" class="form-control" placeholder="Digite seu e-mail" required>
+                                                    </div>
+                                                    
                                                     <div class="valid-feedback">
                                                         OK!
                                                     </div>
@@ -52,7 +58,11 @@
                                                 
                                                 <div class="form-group">
                                                     <label for="password">Senha</label>
-                                                    <input type="password" name="password" id="password" class="form-control" placeholder="Digite sua senha" required>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                                                        <input type="password" name="password" id="password" class="form-control" placeholder="Digite sua senha" required>
+                                                    </div>
+                                                    
                                                     <div class="valid-feedback">
                                                         OK!
                                                     </div>
