@@ -117,7 +117,7 @@ footer {
     object-fit: cover;
 }
 
-.carousel-item img:after {
+.carousel-item:after {
     content: "";
     display: block;
     position: absolute;
@@ -125,7 +125,11 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.carousel-caption {
+    z-index: 100;
 }
 
 /* Media queries */
