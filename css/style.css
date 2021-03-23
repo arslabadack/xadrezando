@@ -112,8 +112,29 @@ footer {
     color: rgb(75, 137, 253);
 }
 
+.legends img {
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.carousel-item:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.carousel-caption {
+    z-index: 100;
+}
+
 /* Media queries */
 @media (max-width: 720px) {
+
     .left-side-footer,
     .right-side-footer {
         display: block;
@@ -123,4 +144,5 @@ footer {
     .footer-link {
         margin: 0;
     }
+
 }
